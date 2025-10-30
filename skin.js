@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.11/21010
-// Filename: BV_bnb.ggsk
-// Generated 2025-10-30T19:03:23
+// Filename: BV_bnb_final.ggsk
+// Generated 2025-10-30T21:27:20
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_thumbnails', 2, false, { ignoreInState: 0  });
@@ -420,7 +420,7 @@ function pano2vrSkin(player,base) {
 		el.ggHPercentVisible = 1.0;
 		el.ggIsDragging = false;
 		hs ='';
-		hs+='height : 21px;';
+		hs+='height : 29px;';
 		hs+='left : 0px;';
 		hs+='overflow-x : visible;';
 		hs+='overflow-y : visible;';
@@ -806,7 +806,7 @@ function pano2vrSkin(player,base) {
 		el.ggCloneOffset = 0;
 		el.ggCloneOffsetChanged = false;
 		el.ggWidth = 140;
-		el.ggHeight = 22;
+		el.ggHeight = 30;
 		el.ggSizeChanged = false;
 		el.ggUpdating = false;
 		el.ggFilter = [];
@@ -881,7 +881,7 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_cloner ";
 		el.ggType='cloner';
 		hs ='';
-		hs+='height : 22px;';
+		hs+='height : 30px;';
 		hs+='left : 0px;';
 		hs+='overflow : visible;';
 		hs+='position : absolute;';
@@ -1540,6 +1540,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._room_button_reservation.logicBlock_borderwidth();
+		me._room_button_reservation.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._room_button_reservation.ggCurrentLogicStateText != newLogicStateText) {
+				me._room_button_reservation.ggCurrentLogicStateText = newLogicStateText;
+				me._room_button_reservation.style.transition='background-color 0s, border-width 0s, color 0s';
+				if (me._room_button_reservation.ggCurrentLogicStateText == 0) {
+					if (me._room_button_reservation.ggUpdateText) {
+					me._room_button_reservation.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Booking", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_reservation.ggUpdateText();
+					} else {
+						if (me._room_button_reservation.ggUpdatePosition) me._room_button_reservation.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._room_button_reservation.ggUpdateText) {
+					me._room_button_reservation.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u9810\u5b9a\u623f\u9593", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_reservation.ggUpdateText();
+					} else {
+						if (me._room_button_reservation.ggUpdatePosition) me._room_button_reservation.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._room_button_reservation.logicBlock_text();
 		me._room_button_reservation.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -1662,16 +1711,11 @@ function pano2vrSkin(player,base) {
 		me._room_button_desktop.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player.getViewerSize(true).width < 800))
+				((me.ggUserdata.tags.indexOf("outdoor") == -1)) && 
+				((player.getViewerSize(true).width > 800))
 			)
 			{
 				newLogicStateVisible = 0;
-			}
-			else if (
-				((me.ggUserdata.tags.indexOf("outdoor") == -1))
-			)
-			{
-				newLogicStateVisible = 1;
 			}
 			else {
 				newLogicStateVisible = -1;
@@ -1680,10 +1724,6 @@ function pano2vrSkin(player,base) {
 				me._room_button_desktop.ggCurrentLogicStateVisible = newLogicStateVisible;
 				me._room_button_desktop.style.transition='background-color 0s, border-width 0s, color 0s';
 				if (me._room_button_desktop.ggCurrentLogicStateVisible == 0) {
-					me._room_button_desktop.style.visibility="hidden";
-					me._room_button_desktop.ggVisible=false;
-				}
-				else if (me._room_button_desktop.ggCurrentLogicStateVisible == 1) {
 					me._room_button_desktop.style.visibility=(Number(me._room_button_desktop.style.opacity)>0||!me._room_button_desktop.style.opacity)?'inherit':'hidden';
 					me._room_button_desktop.ggVisible=true;
 				}
@@ -1767,6 +1807,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._room_button_desktop.logicBlock_borderwidth();
+		me._room_button_desktop.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._room_button_desktop.ggCurrentLogicStateText != newLogicStateText) {
+				me._room_button_desktop.ggCurrentLogicStateText = newLogicStateText;
+				me._room_button_desktop.style.transition='background-color 0s, border-width 0s, color 0s';
+				if (me._room_button_desktop.ggCurrentLogicStateText == 0) {
+					if (me._room_button_desktop.ggUpdateText) {
+					me._room_button_desktop.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Room type", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_desktop.ggUpdateText();
+					} else {
+						if (me._room_button_desktop.ggUpdatePosition) me._room_button_desktop.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._room_button_desktop.ggUpdateText) {
+					me._room_button_desktop.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u623f \u578b", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_desktop.ggUpdateText();
+					} else {
+						if (me._room_button_desktop.ggUpdatePosition) me._room_button_desktop.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._room_button_desktop.logicBlock_text();
 		me._room_button_desktop.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -2678,6 +2767,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._lobby_button_desktop.logicBlock_borderwidth();
+		me._lobby_button_desktop.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._lobby_button_desktop.ggCurrentLogicStateText != newLogicStateText) {
+				me._lobby_button_desktop.ggCurrentLogicStateText = newLogicStateText;
+				me._lobby_button_desktop.style.transition='background-color 0s, border-width 0s, color 0s';
+				if (me._lobby_button_desktop.ggCurrentLogicStateText == 0) {
+					if (me._lobby_button_desktop.ggUpdateText) {
+					me._lobby_button_desktop.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Lobby", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._lobby_button_desktop.ggUpdateText();
+					} else {
+						if (me._lobby_button_desktop.ggUpdatePosition) me._lobby_button_desktop.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._lobby_button_desktop.ggUpdateText) {
+					me._lobby_button_desktop.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u5ba2 \u5ef3", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._lobby_button_desktop.ggUpdateText();
+					} else {
+						if (me._lobby_button_desktop.ggUpdatePosition) me._lobby_button_desktop.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._lobby_button_desktop.logicBlock_text();
 		me._lobby_button_desktop.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -2985,16 +3123,36 @@ function pano2vrSkin(player,base) {
 		me._info_btn_text_.logicBlock_text = function() {
 			var newLogicStateText;
 			if (
-				((me.ggUserdata.tags.indexOf("living_room") != -1))
+				((me.ggUserdata.tags.indexOf("living_room") != -1)) && 
+				((player.getLanguage() == "en"))
 			)
 			{
 				newLogicStateText = 0;
 			}
 			else if (
-				((me.ggUserdata.tags.indexOf("room") != -1))
+				((me.ggUserdata.tags.indexOf("room") != -1)) && 
+				((player.getLanguage() == "en"))
 			)
 			{
 				newLogicStateText = 1;
+			}
+			else if (
+				((me.ggUserdata.tags.indexOf("room") != -1))
+			)
+			{
+				newLogicStateText = 2;
+			}
+			else if (
+				((me.ggUserdata.tags.indexOf("living_room") != -1))
+			)
+			{
+				newLogicStateText = 3;
+			}
+			else if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 4;
 			}
 			else {
 				newLogicStateText = -1;
@@ -3006,7 +3164,7 @@ function pano2vrSkin(player,base) {
 					if (me._info_btn_text_.ggUpdateText) {
 					me._info_btn_text_.ggUpdateText=function() {
 						var params = [];
-						var hs = player._("\u7a7a\u9593\u4ecb\u7d39", params);
+						var hs = player._("Spaces", params);
 						if (hs!=this.ggText) {
 							this.ggText=hs;
 							this.ggTextDiv.innerHTML=hs;
@@ -3022,7 +3180,55 @@ function pano2vrSkin(player,base) {
 					if (me._info_btn_text_.ggUpdateText) {
 					me._info_btn_text_.ggUpdateText=function() {
 						var params = [];
+						var hs = player._("Rooms", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._info_btn_text_.ggUpdateText();
+					} else {
+						if (me._info_btn_text_.ggUpdatePosition) me._info_btn_text_.ggUpdatePosition();
+					}
+				}
+				else if (me._info_btn_text_.ggCurrentLogicStateText == 2) {
+					if (me._info_btn_text_.ggUpdateText) {
+					me._info_btn_text_.ggUpdateText=function() {
+						var params = [];
 						var hs = player._("\u623f\u578b\u4ecb\u7d39", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._info_btn_text_.ggUpdateText();
+					} else {
+						if (me._info_btn_text_.ggUpdatePosition) me._info_btn_text_.ggUpdatePosition();
+					}
+				}
+				else if (me._info_btn_text_.ggCurrentLogicStateText == 3) {
+					if (me._info_btn_text_.ggUpdateText) {
+					me._info_btn_text_.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u7a7a\u9593\u4ecb\u7d39", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._info_btn_text_.ggUpdateText();
+					} else {
+						if (me._info_btn_text_.ggUpdatePosition) me._info_btn_text_.ggUpdatePosition();
+					}
+				}
+				else if (me._info_btn_text_.ggCurrentLogicStateText == 4) {
+					if (me._info_btn_text_.ggUpdateText) {
+					me._info_btn_text_.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Around", params);
 						if (hs!=this.ggText) {
 							this.ggText=hs;
 							this.ggTextDiv.innerHTML=hs;
@@ -4753,6 +4959,55 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
+		me._map_button_text.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._map_button_text.ggCurrentLogicStateText != newLogicStateText) {
+				me._map_button_text.ggCurrentLogicStateText = newLogicStateText;
+				me._map_button_text.style.transition='color 0s';
+				if (me._map_button_text.ggCurrentLogicStateText == 0) {
+					if (me._map_button_text.ggUpdateText) {
+					me._map_button_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Map", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._map_button_text.ggUpdateText();
+					} else {
+						if (me._map_button_text.ggUpdatePosition) me._map_button_text.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._map_button_text.ggUpdateText) {
+					me._map_button_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u5730 \u5716", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._map_button_text.ggUpdateText();
+					} else {
+						if (me._map_button_text.ggUpdatePosition) me._map_button_text.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._map_button_text.logicBlock_text();
 		me._map_button_text.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -6596,7 +6851,7 @@ function pano2vrSkin(player,base) {
 			var newLogicStateAlpha;
 			if (
 				((player.getVariableValue('menu_room') == true)) && 
-				((player.getIsMobile() == false))
+				((player.getViewerSize(true).width > 800))
 			)
 			{
 				newLogicStateAlpha = 0;
@@ -7657,11 +7912,11 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
-		hs+='height : 20%;';
+		hs+='height : calc(20%);';
 		hs+='left : calc(50% - ((calc(30% - 20px) + 0px) / 2) + 0px);';
 		hs+='opacity : 0;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((20% + 0px) / 2) - 100px);';
+		hs+='top : calc(50% - ((calc(20%) + 0px) / 2) - 100px);';
 		hs+='visibility : hidden;';
 		hs+='width : calc(30% - 20px);';
 		hs+='pointer-events:none;';
@@ -7730,20 +7985,18 @@ function pano2vrSkin(player,base) {
 		el=me._reservation_bg=document.createElement('div');
 		el.ggId="reservation_bg";
 		el.ggDx=0;
-		el.ggDy=16;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_rectangle ";
 		el.ggType='rectangle';
 		hs ='';
-		hs+='background : rgba(0,0,0,0.392157);';
 		hs+='border : 0px solid #000000;';
 		hs+='border-radius : 20px;';
 		hs+='cursor : default;';
 		hs+='height : 24px;';
 		hs+='left : calc(50% - ((300px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((24px + 0px) / 2) + 16px);';
+		hs+='top : -26px;';
 		hs+='visibility : hidden;';
 		hs+='width : 300px;';
 		hs+='pointer-events:auto;';
@@ -7764,7 +8017,7 @@ function pano2vrSkin(player,base) {
 		me._reservation_bg.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player.getIsMobile() == true))
+				((player.getViewerSize(true).width < 800))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -7806,33 +8059,32 @@ function pano2vrSkin(player,base) {
 		el.ggTextDiv=els;
 		el.ggId="reservation_line_Text";
 		el.ggDx=0;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'translate(-50%, 0px) ' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
-		hs+='border : 0px solid #000000;';
 		hs+='bottom : 2px;';
 		hs+='color : rgba(255,255,255,1);';
-		hs+='height : 20px;';
-		hs+='left : calc(50% - ((100% + 0px) / 2) + 0px);';
+		hs+='height : auto;';
+		hs+='left : calc(50% - ((0px + 2px) / 2) + 0px);';
 		hs+='position : absolute;';
+		hs+='transform : translate(-50%, 0px);;';
 		hs+='visibility : hidden;';
-		hs+='width : 100%;';
+		hs+='width : auto;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
 		hs ='';
 		hs += 'box-sizing: border-box;';
-		hs+='width: 100%;';
+		hs+='width: auto;';
 		hs+='height: auto;';
-		hs+='max-height: 100%;';
+		hs+='background : #808080;';
+		hs+='border : 1px solid #000000;';
+		hs+='border-radius : 3px;';
 		hs+='text-align: center;';
-		hs+='position: absolute;';
-		hs+='top: 50%;';
-		hs+='transform: translate(0, -50%);';
 		hs+='white-space: pre;';
-		hs+='padding: 0px;';
+		hs+='padding: 0px 3px 0px 3px;';
 		hs+='overflow: hidden;';
 		els.setAttribute('style',hs);
 		me._reservation_line_text.ggUpdateText=function() {
@@ -7862,7 +8114,7 @@ function pano2vrSkin(player,base) {
 			var newLogicStateVisible;
 			if (
 				((player.getVariableValue('line_but_hover') == true)) && 
-				((player.getIsMobile() == false))
+				((player.getViewerSize(true).width >= 800))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -7884,6 +8136,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._reservation_line_text.logicBlock_visible();
+		me._reservation_line_text.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_line_text.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_line_text.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_line_text.style.transition='';
+				if (me._reservation_line_text.ggCurrentLogicStateText == 0) {
+					if (me._reservation_line_text.ggUpdateText) {
+					me._reservation_line_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Join our LINE Official Account to book your stay with us.", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_line_text.ggUpdateText();
+					} else {
+						if (me._reservation_line_text.ggUpdatePosition) me._reservation_line_text.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_line_text.ggUpdateText) {
+					me._reservation_line_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u52a0\u5165\u6211\u5011\u7684 Line \u5b98\u65b9\u5e33\u865f\u806f\u7d61\u8fa6\u7406\u8a02\u623f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_line_text.ggUpdateText();
+					} else {
+						if (me._reservation_line_text.ggUpdatePosition) me._reservation_line_text.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_line_text.logicBlock_text();
 		me._reservation_line_text.ggUpdatePosition=function (useTransition) {
 		}
 		me._reservation_bg.appendChild(me._reservation_line_text);
@@ -7893,33 +8194,32 @@ function pano2vrSkin(player,base) {
 		el.ggTextDiv=els;
 		el.ggId="reservation_FB_Text";
 		el.ggDx=0;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'translate(-50%, 0px) ' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
-		hs+='border : 0px solid #000000;';
 		hs+='bottom : 2px;';
 		hs+='color : rgba(255,255,255,1);';
-		hs+='height : 20px;';
-		hs+='left : calc(50% - ((100% + 0px) / 2) + 0px);';
+		hs+='height : auto;';
+		hs+='left : calc(50% - ((0px + 2px) / 2) + 0px);';
 		hs+='position : absolute;';
+		hs+='transform : translate(-50%, 0px);;';
 		hs+='visibility : hidden;';
-		hs+='width : 100%;';
+		hs+='width : auto;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
 		hs ='';
 		hs += 'box-sizing: border-box;';
-		hs+='width: 100%;';
+		hs+='width: auto;';
 		hs+='height: auto;';
-		hs+='max-height: 100%;';
+		hs+='background : #808080;';
+		hs+='border : 1px solid #000000;';
+		hs+='border-radius : 3px;';
 		hs+='text-align: center;';
-		hs+='position: absolute;';
-		hs+='top: 50%;';
-		hs+='transform: translate(0, -50%);';
 		hs+='white-space: pre;';
-		hs+='padding: 0px;';
+		hs+='padding: 0px 3px 0px 3px;';
 		hs+='overflow: hidden;';
 		els.setAttribute('style',hs);
 		me._reservation_fb_text.ggUpdateText=function() {
@@ -7949,7 +8249,7 @@ function pano2vrSkin(player,base) {
 			var newLogicStateVisible;
 			if (
 				((player.getVariableValue('vis_FB_but_hover') == true)) && 
-				((player.getIsMobile() == false))
+				((player.getViewerSize(true).width >= 800))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -7971,6 +8271,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._reservation_fb_text.logicBlock_visible();
+		me._reservation_fb_text.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_fb_text.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_fb_text.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_fb_text.style.transition='';
+				if (me._reservation_fb_text.ggCurrentLogicStateText == 0) {
+					if (me._reservation_fb_text.ggUpdateText) {
+					me._reservation_fb_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Contact us via Facebook Messenger to book your stay.", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_fb_text.ggUpdateText();
+					} else {
+						if (me._reservation_fb_text.ggUpdatePosition) me._reservation_fb_text.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_fb_text.ggUpdateText) {
+					me._reservation_fb_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u7528 Facebook \u7684 messager \u8207\u6211\u5011\u806f\u7d61\u8a02\u623f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_fb_text.ggUpdateText();
+					} else {
+						if (me._reservation_fb_text.ggUpdatePosition) me._reservation_fb_text.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_fb_text.logicBlock_text();
 		me._reservation_fb_text.ggUpdatePosition=function (useTransition) {
 		}
 		me._reservation_bg.appendChild(me._reservation_fb_text);
@@ -7980,33 +8329,32 @@ function pano2vrSkin(player,base) {
 		el.ggTextDiv=els;
 		el.ggId="reservation_book_Text";
 		el.ggDx=0;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'translate(-50%, 0px) ' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
-		hs+='border : 0px solid #000000;';
 		hs+='bottom : 2px;';
 		hs+='color : rgba(255,255,255,1);';
-		hs+='height : 20px;';
-		hs+='left : calc(50% - ((100% + 0px) / 2) + 0px);';
+		hs+='height : auto;';
+		hs+='left : calc(50% - ((0px + 2px) / 2) + 0px);';
 		hs+='position : absolute;';
+		hs+='transform : translate(-50%, 0px);;';
 		hs+='visibility : hidden;';
-		hs+='width : 100%;';
+		hs+='width : auto;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
 		hs ='';
 		hs += 'box-sizing: border-box;';
-		hs+='width: 100%;';
+		hs+='width: auto;';
 		hs+='height: auto;';
-		hs+='max-height: 100%;';
+		hs+='background : #808080;';
+		hs+='border : 1px solid #000000;';
+		hs+='border-radius : 3px;';
 		hs+='text-align: center;';
-		hs+='position: absolute;';
-		hs+='top: 50%;';
-		hs+='transform: translate(0, -50%);';
 		hs+='white-space: pre;';
-		hs+='padding: 0px;';
+		hs+='padding: 0px 5px 0px 5px;';
 		hs+='overflow: hidden;';
 		els.setAttribute('style',hs);
 		me._reservation_book_text.ggUpdateText=function() {
@@ -8036,7 +8384,7 @@ function pano2vrSkin(player,base) {
 			var newLogicStateVisible;
 			if (
 				((player.getVariableValue('vis_book_but_hover') == true)) && 
-				((player.getIsMobile() == false))
+				((player.getViewerSize(true).width >= 800))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -8058,6 +8406,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._reservation_book_text.logicBlock_visible();
+		me._reservation_book_text.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_book_text.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_book_text.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_book_text.style.transition='';
+				if (me._reservation_book_text.ggCurrentLogicStateText == 0) {
+					if (me._reservation_book_text.ggUpdateText) {
+					me._reservation_book_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Check in via Booking.com", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_book_text.ggUpdateText();
+					} else {
+						if (me._reservation_book_text.ggUpdatePosition) me._reservation_book_text.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_book_text.ggUpdateText) {
+					me._reservation_book_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u900f\u904e Booking.com \u7db2\u7ad9\u8fa6\u7406\u60a8\u7684\u5165\u4f4f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_book_text.ggUpdateText();
+					} else {
+						if (me._reservation_book_text.ggUpdatePosition) me._reservation_book_text.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_book_text.logicBlock_text();
 		me._reservation_book_text.ggUpdatePosition=function (useTransition) {
 		}
 		me._reservation_bg.appendChild(me._reservation_book_text);
@@ -8125,17 +8522,45 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
+		me._bookingcom_icon.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				((me.elementMouseOver['bookingcom_icon'] == true))
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._bookingcom_icon.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._bookingcom_icon.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				me._bookingcom_icon.style.transition='opacity 0s';
+				if (me._bookingcom_icon.ggCurrentLogicStateAlpha == 0) {
+					me._bookingcom_icon.style.visibility=me._bookingcom_icon.ggVisible?'inherit':'hidden';
+					me._bookingcom_icon.style.opacity=0.7;
+				}
+				else {
+					me._bookingcom_icon.style.visibility=me._bookingcom_icon.ggVisible?'inherit':'hidden';
+					me._bookingcom_icon.style.opacity=1;
+				}
+			}
+		}
+		me._bookingcom_icon.logicBlock_alpha();
 		me._bookingcom_icon.onclick=function (e) {
 			player.openUrl("https:\/\/www.booking.com\/hotel\/tw\/hua-lian-bvmin-su.zh-tw.html?aid=304142&label=gen173nr-10CAEoggI46AdIM1gEaOcBiAEBmAEzuAEHyAEN2AED6AEB-AEBiAIBqAIBuAKV9PXHBsACAdICJDcxNjE3ZDY4LWZjZWQtNGQyYy1hYWI0LTkxZjZiZmQyNGZmYdgCAeACAQ&sid=c644d1671b0160e49b24649e245305cf&all_sr_blocks=1510942305_422957334_2_2_0&checkin=2025-10-30&checkout=2025-10-31&dest_id=-2631690&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&highlighted_blocks=1510942305_422957334_2_2_0&hpos=2&matching_block_id=1510942305_422957334_2_2_0&nflt=tdb%3D3&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=1510942305_422957334_2_2_0__150000&srepoch=1761446028&srpvid=6a7f11fb1348017a&type=total&ucfs=1&","");
 			player.setVariableValue('vis_reservation_book', true);
 		}
 		me._bookingcom_icon.onmouseenter=function (e) {
 			me.elementMouseOver['bookingcom_icon']=true;
+			me._bookingcom_icon.logicBlock_alpha();
 		}
 		me._bookingcom_icon.onmouseleave=function (e) {
 			player.setVariableValue('vis_book_but_hover', false);
 			me.elementMouseOver['bookingcom_icon']=false;
+			me._bookingcom_icon.logicBlock_alpha();
 		}
+		me._bookingcom_icon.ggCurrentLogicStateAlpha = -1;
 		me._bookingcom_icon.ggUpdateConditionTimer=function () {
 			if (me.elementMouseOver['bookingcom_icon']) {
 				player.setVariableValue('vis_book_but_hover', true);
@@ -8188,17 +8613,45 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
+		me._line_btn.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				((me.elementMouseOver['line_btn'] == true))
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._line_btn.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._line_btn.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				me._line_btn.style.transition='opacity 0s';
+				if (me._line_btn.ggCurrentLogicStateAlpha == 0) {
+					me._line_btn.style.visibility=me._line_btn.ggVisible?'inherit':'hidden';
+					me._line_btn.style.opacity=0.7;
+				}
+				else {
+					me._line_btn.style.visibility=me._line_btn.ggVisible?'inherit':'hidden';
+					me._line_btn.style.opacity=1;
+				}
+			}
+		}
+		me._line_btn.logicBlock_alpha();
 		me._line_btn.onclick=function (e) {
 			player.setVariableValue('vis_reservation_Line', true);
 			player.openUrl("https:\/\/lin.ee\/ne6ujfJ","");
 		}
 		me._line_btn.onmouseenter=function (e) {
 			me.elementMouseOver['line_btn']=true;
+			me._line_btn.logicBlock_alpha();
 		}
 		me._line_btn.onmouseleave=function (e) {
 			player.setVariableValue('line_but_hover', false);
 			me.elementMouseOver['line_btn']=false;
+			me._line_btn.logicBlock_alpha();
 		}
+		me._line_btn.ggCurrentLogicStateAlpha = -1;
 		me._line_btn.ggUpdateConditionTimer=function () {
 			if (me.elementMouseOver['line_btn']) {
 				player.setVariableValue('line_but_hover', true);
@@ -8250,17 +8703,45 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
+		me._fb_messager.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				((me.elementMouseOver['fb_messager'] == true))
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._fb_messager.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._fb_messager.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				me._fb_messager.style.transition='opacity 0s';
+				if (me._fb_messager.ggCurrentLogicStateAlpha == 0) {
+					me._fb_messager.style.visibility=me._fb_messager.ggVisible?'inherit':'hidden';
+					me._fb_messager.style.opacity=0.7;
+				}
+				else {
+					me._fb_messager.style.visibility=me._fb_messager.ggVisible?'inherit':'hidden';
+					me._fb_messager.style.opacity=1;
+				}
+			}
+		}
+		me._fb_messager.logicBlock_alpha();
 		me._fb_messager.onclick=function (e) {
 			player.openUrl("https:\/\/m.me\/771199176075745","");
 			player.setVariableValue('vis_reservation_FB', true);
 		}
 		me._fb_messager.onmouseenter=function (e) {
 			me.elementMouseOver['fb_messager']=true;
+			me._fb_messager.logicBlock_alpha();
 		}
 		me._fb_messager.onmouseleave=function (e) {
 			player.setVariableValue('vis_FB_but_hover', false);
 			me.elementMouseOver['fb_messager']=false;
+			me._fb_messager.logicBlock_alpha();
 		}
+		me._fb_messager.ggCurrentLogicStateAlpha = -1;
 		me._fb_messager.ggUpdateConditionTimer=function () {
 			if (me.elementMouseOver['fb_messager']) {
 				player.setVariableValue('vis_FB_but_hover', true);
@@ -8275,40 +8756,38 @@ function pano2vrSkin(player,base) {
 		el.ggTextDiv=els;
 		el.ggId="reservation_text";
 		el.ggDx=0;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggDy=16;
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'translate(-50%, -50%) ' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
-		hs+='background : #787878;';
-		hs+='border : 0px solid #000000;';
-		hs+='border-radius : 10px;';
 		hs+='color : rgba(255,255,255,1);';
-		hs+='height : 24px;';
-		hs+='left : calc(50% - ((60% + 0px) / 2) + 0px);';
+		hs+='height : auto;';
+		hs+='left : calc(50% - ((0px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : -40px;';
+		hs+='top : calc(50% - ((0px + 0px) / 2) + 16px);';
+		hs+='transform : translate(-50%, -50%);;';
 		hs+='visibility : inherit;';
-		hs+='width : 60%;';
+		hs+='width : auto;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
 		hs ='';
 		hs += 'box-sizing: border-box;';
-		hs+='width: 100%;';
+		hs+='width: auto;';
 		hs+='height: auto;';
-		hs+='max-height: 100%;';
+		hs+='background : #787878;';
+		hs+='border : 0px solid #000000;';
+		hs+='border-radius : 10px;';
 		hs+='text-align: center;';
-		hs+='position: absolute;';
-		hs+='top: 50%;';
-		hs+='transform: translate(0, -50%);';
 		hs+='white-space: pre;';
-		hs+='padding: 2px;';
+		hs+='padding: 2px 4px 2px 4px;';
 		hs+='overflow: hidden;';
 		els.setAttribute('style',hs);
 		me._reservation_text.ggUpdateText=function() {
 			var params = [];
-			var hs = player._("\u60a8\u53ef\u4ee5\u900f\u904e\u4ee5\u4e0b\u7684\u65b9\u5f0f\u7dda\u4e0a\u8a02\u623f", params);
+			var hs = player._("\u60a8\u53ef\u4ee5\u900f\u904e\u4ee5\u4e0a\u7684\u65b9\u5f0f\u5728\u7dda\u4e0a\u8a02\u623f", params);
 			if (hs!=this.ggText) {
 				this.ggText=hs;
 				this.ggTextDiv.innerHTML=hs;
@@ -8329,6 +8808,92 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
+		me._reservation_text.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getViewerSize(true).width < 800))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else if (
+				((player.getVariableValue('vis_FB_but_hover') == true)) || 
+				((player.getVariableValue('vis_book_but_hover') == true)) || 
+				((player.getVariableValue('line_but_hover') == true))
+			)
+			{
+				newLogicStateVisible = 1;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._reservation_text.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._reservation_text.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._reservation_text.style.transition='';
+				if (me._reservation_text.ggCurrentLogicStateVisible == 0) {
+					me._reservation_text.style.visibility=(Number(me._reservation_text.style.opacity)>0||!me._reservation_text.style.opacity)?'inherit':'hidden';
+					me._reservation_text.ggVisible=true;
+				}
+				else if (me._reservation_text.ggCurrentLogicStateVisible == 1) {
+					me._reservation_text.style.visibility="hidden";
+					me._reservation_text.ggVisible=false;
+				}
+				else {
+					me._reservation_text.style.visibility=(Number(me._reservation_text.style.opacity)>0||!me._reservation_text.style.opacity)?'inherit':'hidden';
+					me._reservation_text.ggVisible=true;
+				}
+			}
+		}
+		me._reservation_text.logicBlock_visible();
+		me._reservation_text.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_text.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_text.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_text.style.transition='';
+				if (me._reservation_text.ggCurrentLogicStateText == 0) {
+					if (me._reservation_text.ggUpdateText) {
+					me._reservation_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Book your stay online \u2014 it only takes a few clicks.", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_text.ggUpdateText();
+					} else {
+						if (me._reservation_text.ggUpdatePosition) me._reservation_text.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_text.ggUpdateText) {
+					me._reservation_text.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u60a8\u53ef\u4ee5\u900f\u904e\u4ee5\u4e0a\u7684\u65b9\u5f0f\u5728\u7dda\u4e0a\u8a02\u623f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_text.ggUpdateText();
+					} else {
+						if (me._reservation_text.ggUpdatePosition) me._reservation_text.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_text.logicBlock_text();
 		me._reservation_text.ggUpdatePosition=function (useTransition) {
 		}
 		me._container_reservation_selection_box.appendChild(me._reservation_text);
@@ -9295,6 +9860,57 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._monitor_info_m.logicBlock_visible();
+		me._monitor_info_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._monitor_info_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._monitor_info_m.ggCurrentLogicStateText = newLogicStateText;
+				me._monitor_info_m.style.transition='';
+				if (me._monitor_info_m.ggCurrentLogicStateText == 0) {
+					if (me._monitor_info_m.ggUpdateText) {
+					me._monitor_info_m.ggUpdateText=function() {
+						var params = [];
+						params.push(String(player._(me.ggUserdata.information)));
+						var hs = player._("%1", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._monitor_info_m.ggUpdateText();
+					} else {
+						if (me._monitor_info_m.ggUpdatePosition) me._monitor_info_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._monitor_info_m.ggUpdateText) {
+					me._monitor_info_m.ggUpdateText=function() {
+						var params = [];
+						params.push(String(player._(me.ggUserdata.title)));
+						var hs = player._("%1", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._monitor_info_m.ggUpdateText();
+					} else {
+						if (me._monitor_info_m.ggUpdatePosition) me._monitor_info_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._monitor_info_m.logicBlock_text();
 		me._monitor_info_m.ggUpdatePosition=function (useTransition) {
 		}
 		me.divSkin.appendChild(me._monitor_info_m);
@@ -9371,7 +9987,7 @@ function pano2vrSkin(player,base) {
 		hs+='height : calc(6%);';
 		hs+='position : absolute;';
 		hs+='right : 20px;';
-		hs+='top : 20px;';
+		hs+='top : 40px;';
 		hs+='visibility : hidden;';
 		hs+='width : calc(16.5% - 20px);';
 		hs+='pointer-events:auto;';
@@ -9386,7 +10002,7 @@ function pano2vrSkin(player,base) {
 		me._map_button_m.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player.getVariableValue('resp_phone') == false))
+				((player.getViewerSize(true).width >= 800))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -9925,6 +10541,55 @@ function pano2vrSkin(player,base) {
 			}
 			return player.getCurrentNode();
 		}
+		me._map_button_text_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._map_button_text_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._map_button_text_m.ggCurrentLogicStateText = newLogicStateText;
+				me._map_button_text_m.style.transition='color 0s';
+				if (me._map_button_text_m.ggCurrentLogicStateText == 0) {
+					if (me._map_button_text_m.ggUpdateText) {
+					me._map_button_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Map", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._map_button_text_m.ggUpdateText();
+					} else {
+						if (me._map_button_text_m.ggUpdatePosition) me._map_button_text_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._map_button_text_m.ggUpdateText) {
+					me._map_button_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u5730\u5716", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._map_button_text_m.ggUpdateText();
+					} else {
+						if (me._map_button_text_m.ggUpdatePosition) me._map_button_text_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._map_button_text_m.logicBlock_text();
 		me._map_button_text_m.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -10928,12 +11593,12 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='border : 0px solid #000000;';
 		hs+='cursor : default;';
-		hs+='height : 60%;';
-		hs+='left : calc(50% - ((60% + 0px) / 2) + 0px);';
+		hs+='height : calc(40%);';
+		hs+='left : calc(50% - ((calc(60% - 250px) + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((60% + 0px) / 2) + 0px);';
+		hs+='top : calc(50% - ((calc(40%) + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
-		hs+='width : 60%;';
+		hs+='width : calc(60% - 250px);';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
@@ -10946,7 +11611,7 @@ function pano2vrSkin(player,base) {
 		me._image_popup_1.logicBlock_size = function() {
 			var newLogicStateSize;
 			if (
-				((player.getVariableValue('resp_phone') == true))
+				((player.getViewerSize(true).width < 800))
 			)
 			{
 				newLogicStateSize = 0;
@@ -10958,17 +11623,17 @@ function pano2vrSkin(player,base) {
 				me._image_popup_1.ggCurrentLogicStateSize = newLogicStateSize;
 				me._image_popup_1.style.transition='width 0s, height 0s';
 				if (me._image_popup_1.ggCurrentLogicStateSize == 0) {
-					me._image_popup_1.style.width='85%';
-					me._image_popup_1.style.height='80%';
-					me._image_popup_1.style.left = 'calc(50% - (85% / 2))';
-					me._image_popup_1.style.top = 'calc(50% - (80% / 2))';
+					me._image_popup_1.style.width='90%';
+					me._image_popup_1.style.height='60%';
+					me._image_popup_1.style.left = 'calc(50% - (90% / 2))';
+					me._image_popup_1.style.top = 'calc(50% - (60% / 2))';
 					skin.updateSize(me._image_popup_1);
 				}
 				else {
-					me._image_popup_1.style.width='60%';
-					me._image_popup_1.style.height='60%';
-					me._image_popup_1.style.left = 'calc(50% - (60% / 2))';
-					me._image_popup_1.style.top = 'calc(50% - (60% / 2))';
+					me._image_popup_1.style.width='calc(60% - 250px)';
+					me._image_popup_1.style.height='calc(40%)';
+					me._image_popup_1.style.left = 'calc(50% - (calc(60% - 250px) / 2))';
+					me._image_popup_1.style.top = 'calc(50% - (calc(40%) / 2))';
 					skin.updateSize(me._image_popup_1);
 				}
 			}
@@ -12409,8 +13074,8 @@ function pano2vrSkin(player,base) {
 		}
 		me._node_info_m.appendChild(me._node_description_m);
 		me.divSkin.appendChild(me._node_info_m);
-		el=me._room_desktop_m=document.createElement('div');
-		el.ggId="room_desktop_M";
+		el=me._room_mobile=document.createElement('div');
+		el.ggId="room_Mobile";
 		el.ggDx=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
@@ -12427,13 +13092,13 @@ function pano2vrSkin(player,base) {
 		hs+='pointer-events:none;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
-		me._room_desktop_m.ggIsActive=function() {
+		me._room_mobile.ggIsActive=function() {
 			return false;
 		}
 		el.ggElementNodeId=function() {
 			return player.getCurrentNode();
 		}
-		me._room_desktop_m.logicBlock_visible = function() {
+		me._room_mobile.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
 				((player.getViewerSize(true).width < 800))
@@ -12444,21 +13109,21 @@ function pano2vrSkin(player,base) {
 			else {
 				newLogicStateVisible = -1;
 			}
-			if (me._room_desktop_m.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._room_desktop_m.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me._room_desktop_m.style.transition='';
-				if (me._room_desktop_m.ggCurrentLogicStateVisible == 0) {
-					me._room_desktop_m.style.visibility=(Number(me._room_desktop_m.style.opacity)>0||!me._room_desktop_m.style.opacity)?'inherit':'hidden';
-					me._room_desktop_m.ggVisible=true;
+			if (me._room_mobile.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._room_mobile.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._room_mobile.style.transition='';
+				if (me._room_mobile.ggCurrentLogicStateVisible == 0) {
+					me._room_mobile.style.visibility=(Number(me._room_mobile.style.opacity)>0||!me._room_mobile.style.opacity)?'inherit':'hidden';
+					me._room_mobile.ggVisible=true;
 				}
 				else {
-					me._room_desktop_m.style.visibility="hidden";
-					me._room_desktop_m.ggVisible=false;
+					me._room_mobile.style.visibility="hidden";
+					me._room_mobile.ggVisible=false;
 				}
 			}
 		}
-		me._room_desktop_m.logicBlock_visible();
-		me._room_desktop_m.ggUpdatePosition=function (useTransition) {
+		me._room_mobile.logicBlock_visible();
+		me._room_mobile.ggUpdatePosition=function (useTransition) {
 		}
 		el=me._room_menu_m=document.createElement('div');
 		els=me._room_menu_m__content=document.createElement('div');
@@ -13148,8 +13813,8 @@ function pano2vrSkin(player,base) {
 			me._room_cloner_m.ggUpdate();
 		}
 		me._room_menu_m__content.appendChild(me._room_cloner_m);
-		me._room_desktop_m.appendChild(me._room_menu_m);
-		me.divSkin.appendChild(me._room_desktop_m);
+		me._room_mobile.appendChild(me._room_menu_m);
+		me.divSkin.appendChild(me._room_mobile);
 		el=me._view_desktop_m=document.createElement('div');
 		el.ggId="view_desktop_M";
 		el.ggDx=0;
@@ -16313,6 +16978,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._reservation_line_text_m.logicBlock_visible();
+		me._reservation_line_text_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_line_text_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_line_text_m.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_line_text_m.style.transition='';
+				if (me._reservation_line_text_m.ggCurrentLogicStateText == 0) {
+					if (me._reservation_line_text_m.ggUpdateText) {
+					me._reservation_line_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Join our LINE Official Account to book your stay with us.", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_line_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_line_text_m.ggUpdatePosition) me._reservation_line_text_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_line_text_m.ggUpdateText) {
+					me._reservation_line_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u52a0\u5165\u6211\u5011\u7684 Line \u5b98\u65b9\u5e33\u865f\u806f\u7d61\u8fa6\u7406\u8a02\u623f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_line_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_line_text_m.ggUpdatePosition) me._reservation_line_text_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_line_text_m.logicBlock_text();
 		me._reservation_line_text_m.ggUpdatePosition=function (useTransition) {
 		}
 		me._reservation_bg_m.appendChild(me._reservation_line_text_m);
@@ -16400,6 +17114,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._reservation_fb_text_m.logicBlock_visible();
+		me._reservation_fb_text_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_fb_text_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_fb_text_m.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_fb_text_m.style.transition='';
+				if (me._reservation_fb_text_m.ggCurrentLogicStateText == 0) {
+					if (me._reservation_fb_text_m.ggUpdateText) {
+					me._reservation_fb_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Contact us via Facebook Messenger to book your stay.", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_fb_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_fb_text_m.ggUpdatePosition) me._reservation_fb_text_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_fb_text_m.ggUpdateText) {
+					me._reservation_fb_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u7528 Facebook \u7684 messager \u8207\u6211\u5011\u806f\u7d61\u8a02\u623f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_fb_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_fb_text_m.ggUpdatePosition) me._reservation_fb_text_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_fb_text_m.logicBlock_text();
 		me._reservation_fb_text_m.ggUpdatePosition=function (useTransition) {
 		}
 		me._reservation_bg_m.appendChild(me._reservation_fb_text_m);
@@ -16487,6 +17250,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._reservation_book_text_m.logicBlock_visible();
+		me._reservation_book_text_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_book_text_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_book_text_m.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_book_text_m.style.transition='';
+				if (me._reservation_book_text_m.ggCurrentLogicStateText == 0) {
+					if (me._reservation_book_text_m.ggUpdateText) {
+					me._reservation_book_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Check in via Booking.com", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_book_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_book_text_m.ggUpdatePosition) me._reservation_book_text_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_book_text_m.ggUpdateText) {
+					me._reservation_book_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u900f\u904e Booking.com \u7db2\u7ad9\u8fa6\u7406\u60a8\u7684\u5165\u4f4f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_book_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_book_text_m.ggUpdatePosition) me._reservation_book_text_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_book_text_m.logicBlock_text();
 		me._reservation_book_text_m.ggUpdatePosition=function (useTransition) {
 		}
 		me._reservation_bg_m.appendChild(me._reservation_book_text_m);
@@ -16727,11 +17539,11 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_text ";
 		el.ggType='text';
 		hs ='';
-		hs+='bottom : 0px;';
 		hs+='color : rgba(255,255,255,1);';
 		hs+='height : auto;';
 		hs+='left : calc(50% - ((0px + 0px) / 2) + 0px);';
 		hs+='position : absolute;';
+		hs+='top : -40px;';
 		hs+='transform : translate(-50%, 0px);;';
 		hs+='visibility : hidden;';
 		hs+='width : auto;';
@@ -16798,6 +17610,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._reservation_text_m.logicBlock_visible();
+		me._reservation_text_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._reservation_text_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._reservation_text_m.ggCurrentLogicStateText = newLogicStateText;
+				me._reservation_text_m.style.transition='';
+				if (me._reservation_text_m.ggCurrentLogicStateText == 0) {
+					if (me._reservation_text_m.ggUpdateText) {
+					me._reservation_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Book your stay online \u2014\nit only takes a few clicks.", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_text_m.ggUpdatePosition) me._reservation_text_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._reservation_text_m.ggUpdateText) {
+					me._reservation_text_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u60a8\u53ef\u4ee5\u900f\u904e\u4ee5\u4e0b\u7684\u65b9\u5f0f\u7dda\u4e0a\u8a02\u623f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._reservation_text_m.ggUpdateText();
+					} else {
+						if (me._reservation_text_m.ggUpdatePosition) me._reservation_text_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._reservation_text_m.logicBlock_text();
 		me._reservation_text_m.ggUpdatePosition=function (useTransition) {
 		}
 		me._container_reservation_selection_box_m.appendChild(me._reservation_text_m);
@@ -16967,6 +17828,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._room_button_reservation_m.logicBlock_borderwidth();
+		me._room_button_reservation_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._room_button_reservation_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._room_button_reservation_m.ggCurrentLogicStateText = newLogicStateText;
+				me._room_button_reservation_m.style.transition='background-color 0s, border-width 0s, color 0s';
+				if (me._room_button_reservation_m.ggCurrentLogicStateText == 0) {
+					if (me._room_button_reservation_m.ggUpdateText) {
+					me._room_button_reservation_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Booking", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_reservation_m.ggUpdateText();
+					} else {
+						if (me._room_button_reservation_m.ggUpdatePosition) me._room_button_reservation_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._room_button_reservation_m.ggUpdateText) {
+					me._room_button_reservation_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u8a02\u623f", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_reservation_m.ggUpdateText();
+					} else {
+						if (me._room_button_reservation_m.ggUpdatePosition) me._room_button_reservation_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._room_button_reservation_m.logicBlock_text();
 		me._room_button_reservation_m.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -17174,6 +18084,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._lobby_button_m.logicBlock_borderwidth();
+		me._lobby_button_m.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._lobby_button_m.ggCurrentLogicStateText != newLogicStateText) {
+				me._lobby_button_m.ggCurrentLogicStateText = newLogicStateText;
+				me._lobby_button_m.style.transition='background-color 0s, border-width 0s, color 0s';
+				if (me._lobby_button_m.ggCurrentLogicStateText == 0) {
+					if (me._lobby_button_m.ggUpdateText) {
+					me._lobby_button_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Lobby", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._lobby_button_m.ggUpdateText();
+					} else {
+						if (me._lobby_button_m.ggUpdatePosition) me._lobby_button_m.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._lobby_button_m.ggUpdateText) {
+					me._lobby_button_m.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u5ba2\u5ef3", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._lobby_button_m.ggUpdateText();
+					} else {
+						if (me._lobby_button_m.ggUpdatePosition) me._lobby_button_m.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._lobby_button_m.logicBlock_text();
 		me._lobby_button_m.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -17287,7 +18246,7 @@ function pano2vrSkin(player,base) {
 		me._room_button_mobile.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player.getViewerSize(true).width >= 800))
+				((player.getViewerSize(true).width > 800))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -17384,6 +18343,55 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._room_button_mobile.logicBlock_borderwidth();
+		me._room_button_mobile.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._room_button_mobile.ggCurrentLogicStateText != newLogicStateText) {
+				me._room_button_mobile.ggCurrentLogicStateText = newLogicStateText;
+				me._room_button_mobile.style.transition='background-color 0s, border-width 0s, color 0s';
+				if (me._room_button_mobile.ggCurrentLogicStateText == 0) {
+					if (me._room_button_mobile.ggUpdateText) {
+					me._room_button_mobile.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Rooms", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_mobile.ggUpdateText();
+					} else {
+						if (me._room_button_mobile.ggUpdatePosition) me._room_button_mobile.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._room_button_mobile.ggUpdateText) {
+					me._room_button_mobile.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u623f\u578b", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._room_button_mobile.ggUpdateText();
+					} else {
+						if (me._room_button_mobile.ggUpdatePosition) me._room_button_mobile.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._room_button_mobile.logicBlock_text();
 		me._room_button_mobile.logicBlock_textcolor = function() {
 			var newLogicStateTextColor;
 			if (
@@ -17904,7 +18912,8 @@ function pano2vrSkin(player,base) {
 		me._dining_button_mobile.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player.getViewerSize(true).width < 800))
+				((player.getViewerSize(true).width < 800)) || 
+				((player.getGyroAvailable() == true))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -18180,7 +19189,8 @@ function pano2vrSkin(player,base) {
 		me._gallery.logicBlock_position = function() {
 			var newLogicStatePosition;
 			if (
-				((player.getViewerSize(true).width < 800))
+				((player.getViewerSize(true).width < 800)) || 
+				((player.getGyroAvailable() == true))
 			)
 			{
 				newLogicStatePosition = 0;
@@ -18205,7 +19215,8 @@ function pano2vrSkin(player,base) {
 		me._gallery.logicBlock_size = function() {
 			var newLogicStateSize;
 			if (
-				((player.getViewerSize(true).width < 800))
+				((player.getViewerSize(true).width < 800)) || 
+				((player.getGyroAvailable() == true))
 			)
 			{
 				newLogicStateSize = 0;
@@ -18447,6 +19458,137 @@ function pano2vrSkin(player,base) {
 		me._intro_pics.ggUpdatePosition=function (useTransition) {
 		}
 		me.divSkin.appendChild(me._intro_pics);
+		el=me._go_back_bnb=document.createElement('div');
+		els=me._go_back_bnb__text=document.createElement('div');
+		el.className='ggskin ggskin_textdiv';
+		el.ggTextDiv=els;
+		el.ggId="Go Back BnB";
+		el.ggDx=0;
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
+		el.ggVisible=false;
+		el.className="ggskin ggskin_text ";
+		el.ggType='text';
+		hs ='';
+		hs+='background : rgba(128,128,128,0.501961);';
+		hs+='border : 1px solid #ffffff;';
+		hs+='border-radius : 5px;';
+		hs+='bottom : 60px;';
+		hs+='color : #000000;';
+		hs+='cursor : pointer;';
+		hs+='height : 20px;';
+		hs+='left : calc(50% - ((100px + 2px) / 2) + 0px);';
+		hs+='position : absolute;';
+		hs+='visibility : hidden;';
+		hs+='width : 100px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style.transformOrigin='50% 50%';
+		hs ='';
+		hs += 'box-sizing: border-box;';
+		hs+='width: 100%;';
+		hs+='height: 100%;';
+		hs+='text-align: center;';
+		hs+='white-space: pre;';
+		hs+='padding: 1px;';
+		hs+='overflow: hidden;';
+		els.setAttribute('style',hs);
+		me._go_back_bnb.ggUpdateText=function() {
+			var params = [];
+			var hs = player._("\u56de\u6c11\u5bbf\u9580\u53e3", params);
+			if (hs!=this.ggText) {
+				this.ggText=hs;
+				this.ggTextDiv.innerHTML=hs;
+				if (this.ggUpdatePosition) this.ggUpdatePosition();
+			}
+		}
+		me._go_back_bnb.ggUpdateText();
+		el.appendChild(els);
+		me._go_back_bnb.ggIsActive=function() {
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return player.getCurrentNode();
+		}
+		me._go_back_bnb.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((me.ggUserdata.tags.indexOf("flat") != -1))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._go_back_bnb.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._go_back_bnb.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._go_back_bnb.style.transition='';
+				if (me._go_back_bnb.ggCurrentLogicStateVisible == 0) {
+					me._go_back_bnb.style.visibility=(Number(me._go_back_bnb.style.opacity)>0||!me._go_back_bnb.style.opacity)?'inherit':'hidden';
+					me._go_back_bnb.ggVisible=true;
+				}
+				else {
+					me._go_back_bnb.style.visibility="hidden";
+					me._go_back_bnb.ggVisible=false;
+				}
+			}
+		}
+		me._go_back_bnb.logicBlock_visible();
+		me._go_back_bnb.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				((player.getLanguage() == "en"))
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._go_back_bnb.ggCurrentLogicStateText != newLogicStateText) {
+				me._go_back_bnb.ggCurrentLogicStateText = newLogicStateText;
+				me._go_back_bnb.style.transition='';
+				if (me._go_back_bnb.ggCurrentLogicStateText == 0) {
+					if (me._go_back_bnb.ggUpdateText) {
+					me._go_back_bnb.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("Go back to B&B", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._go_back_bnb.ggUpdateText();
+					} else {
+						if (me._go_back_bnb.ggUpdatePosition) me._go_back_bnb.ggUpdatePosition();
+					}
+				}
+				else {
+					if (me._go_back_bnb.ggUpdateText) {
+					me._go_back_bnb.ggUpdateText=function() {
+						var params = [];
+						var hs = player._("\u56de\u6c11\u5bbf\u9580\u53e3", params);
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					me._go_back_bnb.ggUpdateText();
+					} else {
+						if (me._go_back_bnb.ggUpdatePosition) me._go_back_bnb.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._go_back_bnb.logicBlock_text();
+		me._go_back_bnb.onclick=function (e) {
+			player.openNext("{"+player.getStartNode()+"}","");
+		}
+		me._go_back_bnb.ggUpdatePosition=function (useTransition) {
+		}
+		me.divSkin.appendChild(me._go_back_bnb);
 		me._languages_popup.logicBlock_visible();
 		me._languages_popup.logicBlock_alpha();
 		me._languages_popup.logicBlock_backgroundcolor();
@@ -18463,11 +19605,13 @@ function pano2vrSkin(player,base) {
 		me._room_button_reservation.logicBlock_visible();
 		me._room_button_reservation.logicBlock_backgroundcolor();
 		me._room_button_reservation.logicBlock_borderwidth();
+		me._room_button_reservation.logicBlock_text();
 		me._room_button_reservation.logicBlock_textcolor();
 		me.elementMouseOver['room_button_reservation']=false;
 		me._room_button_desktop.logicBlock_visible();
 		me._room_button_desktop.logicBlock_backgroundcolor();
 		me._room_button_desktop.logicBlock_borderwidth();
+		me._room_button_desktop.logicBlock_text();
 		me._room_button_desktop.logicBlock_textcolor();
 		me.elementMouseOver['room_button_desktop']=false;
 		me._view_button_desktop.logicBlock_visible();
@@ -18488,6 +19632,7 @@ function pano2vrSkin(player,base) {
 		me._lobby_button_desktop.logicBlock_visible();
 		me._lobby_button_desktop.logicBlock_backgroundcolor();
 		me._lobby_button_desktop.logicBlock_borderwidth();
+		me._lobby_button_desktop.logicBlock_text();
 		me._lobby_button_desktop.logicBlock_textcolor();
 		me.elementMouseOver['lobby_button_desktop']=false;
 		me._hotspot_info_button.logicBlock_visible();
@@ -18963,6 +20108,7 @@ function pano2vrSkin(player,base) {
 		me._map_icon_active.logicBlock_visible();
 		me._floorplan_icon.logicBlock_visible();
 		me._floorplan_icon_active.logicBlock_visible();
+		me._map_button_text.logicBlock_text();
 		me._map_button_text.logicBlock_textcolor();
 		me._view_menu.logicBlock_position();
 		me._view_menu.logicBlock_size();
@@ -18980,12 +20126,21 @@ function pano2vrSkin(player,base) {
 		me._container_reservation_selection_box.logicBlock_alpha();
 		me._reservation_bg.logicBlock_visible();
 		me._reservation_line_text.logicBlock_visible();
+		me._reservation_line_text.logicBlock_text();
 		me._reservation_fb_text.logicBlock_visible();
+		me._reservation_fb_text.logicBlock_text();
 		me._reservation_book_text.logicBlock_visible();
+		me._reservation_book_text.logicBlock_text();
+		me._bookingcom_icon.logicBlock_alpha();
 		me.elementMouseOver['bookingcom_icon']=false;
+		me._line_btn.logicBlock_alpha();
 		me.elementMouseOver['line_btn']=false;
+		me._fb_messager.logicBlock_alpha();
 		me.elementMouseOver['fb_messager']=false;
+		me._reservation_text.logicBlock_visible();
+		me._reservation_text.logicBlock_text();
 		me._monitor_info_m.logicBlock_visible();
+		me._monitor_info_m.logicBlock_text();
 		el = me._map_code;
 		;
 		me._map_button_m.logicBlock_visible();
@@ -18997,6 +20152,7 @@ function pano2vrSkin(player,base) {
 		me._map_icon_active_m.logicBlock_visible();
 		me._floorplan_icon_m.logicBlock_visible();
 		me._floorplan_icon_active_m.logicBlock_visible();
+		me._map_button_text_m.logicBlock_text();
 		me._map_button_text_m.logicBlock_textcolor();
 		me._map_phone.logicBlock_alpha();
 		me.elementMouseOver['close_popup_phone']=false;
@@ -19477,7 +20633,7 @@ function pano2vrSkin(player,base) {
 		me._node_info_m.logicBlock_visible();
 		me._node_info_m.logicBlock_alpha();
 		me._node_description_m.logicBlock_visible();
-		me._room_desktop_m.logicBlock_visible();
+		me._room_mobile.logicBlock_visible();
 		me._room_menu_m.logicBlock_position();
 		me._room_menu_m.logicBlock_size();
 		me._room_menu_m.logicBlock_alpha();
@@ -19500,25 +20656,32 @@ function pano2vrSkin(player,base) {
 		me._container_reservation_selection_box_m.logicBlock_visible();
 		me._container_reservation_selection_box_m.logicBlock_alpha();
 		me._reservation_line_text_m.logicBlock_visible();
+		me._reservation_line_text_m.logicBlock_text();
 		me._reservation_fb_text_m.logicBlock_visible();
+		me._reservation_fb_text_m.logicBlock_text();
 		me._reservation_book_text_m.logicBlock_visible();
+		me._reservation_book_text_m.logicBlock_text();
 		me.elementMouseOver['bookingcom_icon_m']=false;
 		me.elementMouseOver['line_btn_m']=false;
 		me.elementMouseOver['fb_messager_m']=false;
 		me._reservation_text_m.logicBlock_visible();
+		me._reservation_text_m.logicBlock_text();
 		me._room_button_reservation_m.logicBlock_visible();
 		me._room_button_reservation_m.logicBlock_backgroundcolor();
 		me._room_button_reservation_m.logicBlock_borderwidth();
+		me._room_button_reservation_m.logicBlock_text();
 		me._room_button_reservation_m.logicBlock_textcolor();
 		me.elementMouseOver['room_button_reservation_m']=false;
 		me._lobby_button_m.logicBlock_visible();
 		me._lobby_button_m.logicBlock_backgroundcolor();
 		me._lobby_button_m.logicBlock_borderwidth();
+		me._lobby_button_m.logicBlock_text();
 		me._lobby_button_m.logicBlock_textcolor();
 		me.elementMouseOver['lobby_button_m']=false;
 		me._room_button_mobile.logicBlock_visible();
 		me._room_button_mobile.logicBlock_backgroundcolor();
 		me._room_button_mobile.logicBlock_borderwidth();
+		me._room_button_mobile.logicBlock_text();
 		me._room_button_mobile.logicBlock_textcolor();
 		me.elementMouseOver['room_button_mobile']=false;
 		me._view_button_mobile.logicBlock_visible();
@@ -19542,6 +20705,8 @@ function pano2vrSkin(player,base) {
 		me._gallery.logicBlock_visible();
 		me._timer_1.logicBlock_visible();
 		me._intro_pics.logicBlock_scaling();
+		me._go_back_bnb.logicBlock_visible();
+		me._go_back_bnb.logicBlock_text();
 		player.addListener('activehotspotchanged', function(event) {
 			if (hotspotTemplates.hasOwnProperty('ht_node')) {
 				for(var i = 0; i < hotspotTemplates['ht_node'].length; i++) {
@@ -19710,6 +20875,7 @@ function pano2vrSkin(player,base) {
 			me._reservation_line_text.logicBlock_visible();
 			me._reservation_fb_text.logicBlock_visible();
 			me._reservation_book_text.logicBlock_visible();
+			me._reservation_text.logicBlock_visible();
 			me._map_button_m.logicBlock_visible();
 			me._map_button_m.logicBlock_alpha();
 			me._map_button_m.logicBlock_backgroundcolor();
@@ -19745,7 +20911,6 @@ function pano2vrSkin(player,base) {
 			me._screentint_info.logicBlock_visible();
 			me._information.logicBlock_visible();
 			me._screentint_image_1.logicBlock_visible();
-			me._image_popup_1.logicBlock_size();
 			me._image_popup_1.logicBlock_visible();
 			me._popup_image_1.logicBlock_visible();
 			me._image_popup_close_1.logicBlock_visible();
@@ -19800,6 +20965,7 @@ function pano2vrSkin(player,base) {
 			me._screen_tint.logicBlock_visible();
 			me._gallery.logicBlock_visible();
 			me._timer_1.logicBlock_visible();
+			me._go_back_bnb.logicBlock_visible();
 		});
 		player.addListener('changevisitednodes', function(event) {
 			for(var i = 0; i < me._lobby_cloner_m.ggInstances.length; i++) {
@@ -19882,12 +21048,16 @@ function pano2vrSkin(player,base) {
 			me._button_translation.logicBlock_visible();
 			me._btn_languages.logicBlock_visible();
 			me._room_button_reservation.logicBlock_backgroundcolor();
+			me._room_button_reservation.logicBlock_text();
 			me._room_button_desktop.logicBlock_backgroundcolor();
+			me._room_button_desktop.logicBlock_text();
 			me._view_button_desktop.logicBlock_backgroundcolor();
 			me._entertainment_button_desktop.logicBlock_backgroundcolor();
 			me._dining_button_desktop.logicBlock_backgroundcolor();
 			me._lobby_button_desktop.logicBlock_backgroundcolor();
+			me._lobby_button_desktop.logicBlock_text();
 			me._info_button.logicBlock_backgroundcolor();
+			me._info_btn_text_.logicBlock_text();
 			me._node_info_desktop.logicBlock_size();
 			me._node_info_desktop.logicBlock_visible();
 			me._node_description.logicBlock_visible();
@@ -19911,6 +21081,7 @@ function pano2vrSkin(player,base) {
 			me._map_icon_active.logicBlock_visible();
 			me._floorplan_icon.logicBlock_visible();
 			me._floorplan_icon_active.logicBlock_visible();
+			me._map_button_text.logicBlock_text();
 			me._view_menu.ggUpdatePosition();
 			me._view_menu.logicBlock_position();
 			me._view_menu.logicBlock_size();
@@ -19931,8 +21102,14 @@ function pano2vrSkin(player,base) {
 			me._container_reservation_selection_box.logicBlock_alpha();
 			me._reservation_bg.logicBlock_visible();
 			me._reservation_line_text.logicBlock_visible();
+			me._reservation_line_text.logicBlock_text();
 			me._reservation_fb_text.logicBlock_visible();
+			me._reservation_fb_text.logicBlock_text();
 			me._reservation_book_text.logicBlock_visible();
+			me._reservation_book_text.logicBlock_text();
+			me._reservation_text.logicBlock_visible();
+			me._reservation_text.logicBlock_text();
+			me._monitor_info_m.logicBlock_text();
 			me._map_button_m.logicBlock_visible();
 			me._map_button_m.logicBlock_alpha();
 			me._map_button_m.logicBlock_backgroundcolor();
@@ -19940,6 +21117,7 @@ function pano2vrSkin(player,base) {
 			me._map_icon_active_m.logicBlock_visible();
 			me._floorplan_icon_m.logicBlock_visible();
 			me._floorplan_icon_active_m.logicBlock_visible();
+			me._map_button_text_m.logicBlock_text();
 			me._map_phone.logicBlock_alpha();
 			me._map_el_phone.logicBlock_visible();
 			if (me._map_el_phone.ggVisible) {
@@ -19952,7 +21130,6 @@ function pano2vrSkin(player,base) {
 			me._screentint_info.logicBlock_visible();
 			me._information.logicBlock_visible();
 			me._screentint_image_1.logicBlock_visible();
-			me._image_popup_1.logicBlock_size();
 			me._image_popup_1.logicBlock_visible();
 			me._popup_image_1.logicBlock_position();
 			me._popup_image_1.logicBlock_visible();
@@ -19993,20 +21170,36 @@ function pano2vrSkin(player,base) {
 			me._container_reservation_selection_box_m.logicBlock_visible();
 			me._container_reservation_selection_box_m.logicBlock_alpha();
 			me._reservation_line_text_m.logicBlock_visible();
+			me._reservation_line_text_m.logicBlock_text();
 			me._reservation_fb_text_m.logicBlock_visible();
+			me._reservation_fb_text_m.logicBlock_text();
 			me._reservation_book_text_m.logicBlock_visible();
+			me._reservation_book_text_m.logicBlock_text();
 			me._reservation_text_m.logicBlock_visible();
+			me._reservation_text_m.logicBlock_text();
 			me._room_button_reservation_m.logicBlock_backgroundcolor();
+			me._room_button_reservation_m.logicBlock_text();
 			me._lobby_button_m.logicBlock_backgroundcolor();
+			me._lobby_button_m.logicBlock_text();
 			me._room_button_mobile.logicBlock_backgroundcolor();
+			me._room_button_mobile.logicBlock_text();
 			me._view_button_mobile.logicBlock_backgroundcolor();
 			me._entertainment_button_mobile.logicBlock_backgroundcolor();
+			me._dining_button_mobile.logicBlock_visible();
 			me._dining_button_mobile.logicBlock_backgroundcolor();
 			me._screen_tint.logicBlock_visible();
+			me._gallery.logicBlock_position();
+			me._gallery.logicBlock_size();
 			me._gallery.logicBlock_visible();
 			me._intro_pics.style.transition='none';
 			me._intro_pics.style.visibility=(Number(me._intro_pics.style.opacity)>0||!me._intro_pics.style.opacity)?'inherit':'hidden';
 			me._intro_pics.ggVisible=true;
+			me._go_back_bnb.logicBlock_text();
+		});
+		player.addListener('gyroavailable', function(event) {
+			me._dining_button_mobile.logicBlock_visible();
+			me._gallery.logicBlock_position();
+			me._gallery.logicBlock_size();
 		});
 		player.addListener('hastouch', function(event) {
 			if (hotspotTemplates.hasOwnProperty('ht_info')) {
@@ -20024,6 +21217,27 @@ function pano2vrSkin(player,base) {
 					hotspotTemplates['ht_image_text'][i].ggEvent_hastouch();
 				}
 			}
+		});
+		player.addListener('languagechanged', function(event) {
+			me._room_button_reservation.logicBlock_text();
+			me._room_button_desktop.logicBlock_text();
+			me._lobby_button_desktop.logicBlock_text();
+			me._info_btn_text_.logicBlock_text();
+			me._map_button_text.logicBlock_text();
+			me._reservation_line_text.logicBlock_text();
+			me._reservation_fb_text.logicBlock_text();
+			me._reservation_book_text.logicBlock_text();
+			me._reservation_text.logicBlock_text();
+			me._monitor_info_m.logicBlock_text();
+			me._map_button_text_m.logicBlock_text();
+			me._reservation_line_text_m.logicBlock_text();
+			me._reservation_fb_text_m.logicBlock_text();
+			me._reservation_book_text_m.logicBlock_text();
+			me._reservation_text_m.logicBlock_text();
+			me._room_button_reservation_m.logicBlock_text();
+			me._lobby_button_m.logicBlock_text();
+			me._room_button_mobile.logicBlock_text();
+			me._go_back_bnb.logicBlock_text();
 		});
 		player.addListener('positionchanged', function(event) {
 			me._map_el.ggRadar.update();
@@ -20053,13 +21267,21 @@ function pano2vrSkin(player,base) {
 			me._hotspot_info_button.logicBlock_visible();
 			me._node_info_desktop.logicBlock_visible();
 			me._map_button.logicBlock_visible();
+			me._room_menu.logicBlock_alpha();
 			me._container_reservation_selection_box.logicBlock_visible();
+			me._reservation_bg.logicBlock_visible();
+			me._reservation_line_text.logicBlock_visible();
+			me._reservation_fb_text.logicBlock_visible();
+			me._reservation_book_text.logicBlock_visible();
+			me._reservation_text.logicBlock_visible();
 			me._monitor_info_m.logicBlock_visible();
+			me._map_button_m.logicBlock_visible();
 			me._map_phone.logicBlock_alpha();
+			me._image_popup_1.logicBlock_size();
 			me._popup_info_text.logicBlock_angle();
 			me._image_popup_close_1.logicBlock_size();
 			me._node_info_m.logicBlock_visible();
-			me._room_desktop_m.logicBlock_visible();
+			me._room_mobile.logicBlock_visible();
 			me._view_desktop_m.logicBlock_visible();
 			me._entertainment_desktop_m.logicBlock_visible();
 			me._dining_desktop_m.logicBlock_visible();
@@ -20095,6 +21317,11 @@ function pano2vrSkin(player,base) {
 					hotspotTemplates['ht_info'][i].ggEvent_varchanged_ht_ani();
 				}
 			}
+			if (hotspotTemplates.hasOwnProperty('ht_image_text')) {
+				for(var i = 0; i < hotspotTemplates['ht_image_text'].length; i++) {
+					hotspotTemplates['ht_image_text'][i].ggEvent_varchanged_ht_ani();
+				}
+			}
 			if (hotspotTemplates.hasOwnProperty('ht_gallery_D')) {
 				for(var i = 0; i < hotspotTemplates['ht_gallery_D'].length; i++) {
 					hotspotTemplates['ht_gallery_D'][i].ggEvent_varchanged_ht_ani();
@@ -20114,6 +21341,7 @@ function pano2vrSkin(player,base) {
 		player.addListener('varchanged_line_but_hover', function(event) {
 			me._reservation_bg.logicBlock_visible();
 			me._reservation_line_text.logicBlock_visible();
+			me._reservation_text.logicBlock_visible();
 			me._reservation_line_text_m.logicBlock_visible();
 		});
 		player.addListener('varchanged_menu_dining', function(event) {
@@ -20173,9 +21401,7 @@ function pano2vrSkin(player,base) {
 		});
 		player.addListener('varchanged_resp_phone', function(event) {
 			me._map_button.logicBlock_alpha();
-			me._map_button_m.logicBlock_visible();
 			me._map_button_m.logicBlock_alpha();
-			me._image_popup_1.logicBlock_size();
 			me._hotspot_info_button_m.logicBlock_alpha();
 		});
 		player.addListener('varchanged_resp_translation', function(event) {
@@ -20201,11 +21427,13 @@ function pano2vrSkin(player,base) {
 		player.addListener('varchanged_vis_FB_but_hover', function(event) {
 			me._reservation_bg.logicBlock_visible();
 			me._reservation_fb_text.logicBlock_visible();
+			me._reservation_text.logicBlock_visible();
 			me._reservation_fb_text_m.logicBlock_visible();
 		});
 		player.addListener('varchanged_vis_book_but_hover', function(event) {
 			me._reservation_bg.logicBlock_visible();
 			me._reservation_book_text.logicBlock_visible();
+			me._reservation_text.logicBlock_visible();
 			me._reservation_book_text_m.logicBlock_visible();
 		});
 		player.addListener('varchanged_vis_floorplan', function(event) {
@@ -22212,33 +23440,37 @@ function pano2vrSkin(player,base) {
 		el.ggTextDiv=els;
 		el.ggId="thumbnail_title_M";
 		el.ggDx=-5;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:0.8,sy:0.8,def:'translate(-50%, 0px) ' };
+		el.ggParameter={ rx:0,ry:0,a:0,sx:0.8,sy:0.8,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_text hepta_slab";
 		el.ggType='text';
 		hs ='';
+		hs+='border : 0px solid #000000;';
 		hs+='bottom : 5px;';
 		hs+='color : rgba(255,255,255,1);';
 		hs+='cursor : pointer;';
-		hs+='height : auto;';
-		hs+='left : calc(50% - ((0px + 0px) / 2) - 5px);';
+		hs+='height : 22px;';
+		hs+='left : calc(50% - ((80px + 0px) / 2) - 5px);';
 		hs+='position : absolute;';
-		hs+='transform : translate(-50%, 0px);;';
 		hs+='visibility : inherit;';
-		hs+='width : auto;';
+		hs+='width : 80px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
 		el.style.transform=parameterToTransform(el.ggParameter);
 		hs ='';
 		hs += 'box-sizing: border-box;';
-		hs+='width: auto;';
+		hs+='width: 100%;';
 		hs+='height: auto;';
-		hs+='border : 0px solid #000000;';
+		hs+='max-height: 100%;';
 		hs+='text-align: center;';
-		hs+='white-space: pre;';
+		hs+='position: absolute;';
+		hs+='top: 50%;';
+		hs+='transform: translate(0, -50%);';
+		hs+='white-space: pre-line;';
 		hs+='padding: 0px;';
 		hs+='overflow: hidden;';
+		hs+='overflow-y: auto;';
 		els.setAttribute('style',hs);
 		me._thumbnail_title_m.ggUpdateText=function() {
 			var params = [];
@@ -24646,7 +25878,7 @@ function pano2vrSkin(player,base) {
 		el=me._ht_gallery=document.createElement('div');
 		el.ggId="ht_gallery";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
-		el.ggVisible=false;
+		el.ggVisible=true;
 		el.className="ggskin ggskin_hotspot ";
 		el.ggType='hotspot';
 		hs ='';
@@ -24654,7 +25886,7 @@ function pano2vrSkin(player,base) {
 		hs+='left : 244px;';
 		hs+='position : absolute;';
 		hs+='top : 80px;';
-		hs+='visibility : hidden;';
+		hs+='visibility : inherit;';
 		hs+='width : 0px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
@@ -25333,7 +26565,7 @@ function pano2vrSkin(player,base) {
 		me._ht_gallery_d.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				((player.getViewerSize(true).width > 800))
+				((player.getViewerSize(true).width >= 800))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -25773,6 +27005,35 @@ function pano2vrSkin(player,base) {
 			}
 			return me.ggNodeId;
 		}
+		me._ht_image_image.logicBlock_scaling = function() {
+			var newLogicStateScaling;
+			if (
+				((player.getVariableValue('ht_ani') == true))
+			)
+			{
+				newLogicStateScaling = 0;
+			}
+			else {
+				newLogicStateScaling = -1;
+			}
+			if (me._ht_image_image.ggCurrentLogicStateScaling != newLogicStateScaling) {
+				me._ht_image_image.ggCurrentLogicStateScaling = newLogicStateScaling;
+				me._ht_image_image.style.transition='transform 1000ms ease 0ms';
+				if (me._ht_image_image.ggCurrentLogicStateScaling == 0) {
+					me._ht_image_image.ggParameter.sx = 0.6;
+					me._ht_image_image.ggParameter.sy = 0.6;
+					me._ht_image_image.style.transform=parameterToTransform(me._ht_image_image.ggParameter);
+					setTimeout(function() {skin.updateSize(me._ht_image_image);}, 1050);
+				}
+				else {
+					me._ht_image_image.ggParameter.sx = 1;
+					me._ht_image_image.ggParameter.sy = 1;
+					me._ht_image_image.style.transform=parameterToTransform(me._ht_image_image.ggParameter);
+					setTimeout(function() {skin.updateSize(me._ht_image_image);}, 1050);
+				}
+			}
+		}
+		me._ht_image_image.logicBlock_scaling();
 		me._ht_image_image.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
@@ -25786,7 +27047,7 @@ function pano2vrSkin(player,base) {
 			}
 			if (me._ht_image_image.ggCurrentLogicStateVisible != newLogicStateVisible) {
 				me._ht_image_image.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me._ht_image_image.style.transition='';
+				me._ht_image_image.style.transition='transform 1000ms ease 0ms';
 				if (me._ht_image_image.ggCurrentLogicStateVisible == 0) {
 					me._ht_image_image.style.visibility="hidden";
 					me._ht_image_image.ggVisible=false;
@@ -26065,6 +27326,7 @@ function pano2vrSkin(player,base) {
 		}
 		me._ht_image_text.appendChild(me._ht_image_customimage);
 		me.elementMouseOver['ht_image_text']=false;
+		me._ht_image_image.logicBlock_scaling();
 		me._ht_image_image.logicBlock_visible();
 		me.elementMouseOver['ht_image_image']=false;
 		me._tt_ht_image.logicBlock_position();
@@ -26084,11 +27346,13 @@ function pano2vrSkin(player,base) {
 				me._ht_image_customimage.logicBlock_visible();
 			};
 			me.ggEvent_changenode=function() {
+				me._ht_image_image.logicBlock_scaling();
 				me._ht_image_image.logicBlock_visible();
 				me._tt_ht_image.logicBlock_visible();
 				me._ht_image_customimage.logicBlock_visible();
 			};
 			me.ggEvent_configloaded=function() {
+				me._ht_image_image.logicBlock_scaling();
 				me._ht_image_image.logicBlock_visible();
 				me._tt_ht_image.logicBlock_position();
 				me._tt_ht_image.logicBlock_visible();
@@ -26096,6 +27360,9 @@ function pano2vrSkin(player,base) {
 			};
 			me.ggEvent_hastouch=function() {
 				me._tt_ht_image.logicBlock_position();
+			};
+			me.ggEvent_varchanged_ht_ani=function() {
+				me._ht_image_image.logicBlock_scaling();
 			};
 			me.__div = me._ht_image_text;
 	};
