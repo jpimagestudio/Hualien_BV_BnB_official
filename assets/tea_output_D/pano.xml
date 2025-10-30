@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="7.1.11" apprev="21010" hassounds="0" start="node2">
+  <panorama id="node2">
+    <input width="2400" leveltilesize="510" cylinder="1" height="1600" overlap="1" levelbias="0.400" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" flat="1" levelingpitch="0" levelbiashidpi="1.000">
+      <level width="2400" predecode="0" height="1600" preload="0"/>
+      <level width="1200" predecode="0" height="800" preload="0"/>
+      <level width="600" predecode="0" height="400" preload="0"/>
+      <level width="300" predecode="1" height="200" preload="1"/>
+      <preview color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="500"/>
+      <min pan="500" tilt="-90" fovpixel="2"/>
+      <max fovstereographic="330" pan="360" tilt="90" fovfisheye="360" fov="140" scaletofit="0"/>
+    </view>
+    <userdata comment="" longitude="" heading="0" customnodeid="" latitude="" author="JP爵攝數位影像 | JP Image Studio" copyright="" nodeid="node2" title="花蓮BV民宿｜Coffee &amp; Tea Bar" source="Canon R6 + EF 24 - 70mm + Flash" info="花蓮在地小點心與南投縣民間鄉高山茶包" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心我們準備了花蓮在地特色小品： 花蓮特產的蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，甜而不膩，充滿家鄉味。&lt;/p>&#xa;&lt;p>一旁搭配嚴選南投名間小葉種嫩芽手摘製成的蜜香紅茶，以及融合台灣中海拔高山烏龍及無發酵高山綠茶調製而成的金烏龍綠茶，茶香醇厚，口感順滑，為旅程開啟溫潤的序曲。&lt;/p>&#xa;&lt;div>" tags="Desktop" datetime="2025/10/28 13:18"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label width="180" bordercolor="0x000000" textalpha="1" border="1" height="20" wordwrap="1" borderradius="1" backgroundcolor="0xffffff" background="1" backgroundalpha="1" textcolor="0x000000" borderalpha="1" enabled="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" borderalpha="1" backgroundcolor="0x0000ff"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" zoomafteroutfov="40" zoomafterinfov="140" zoomfov="40" delay="none" zoomoutpause="1" zoomin="0" type="crossdissolve" softedge="0" zoomspeed="2" zoomout="0" blendcolor="0x000000" enabled="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboard="0" invertwheel="0" rubberband="0" contextfullscreen="1" contextvr="1" lockedwheel="0" speedwheel="1" sensitivity="8" invertcontrol="1" zoomcentercursor="1" lockedmouse="0" lockedkeyboardzoom="0" dblclickfullscreen="0" simulatemass="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node4">
+    <input width="2400" leveltilesize="510" cylinder="1" height="1600" overlap="1" levelbias="0.400" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" flat="1" levelingpitch="0" levelbiashidpi="1.000">
+      <level width="2400" predecode="0" height="1600" preload="0"/>
+      <level width="1200" predecode="0" height="800" preload="0"/>
+      <level width="600" predecode="0" height="400" preload="0"/>
+      <level width="300" predecode="1" height="200" preload="1"/>
+      <preview color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="2">
+      <start pan="0" tilt="0" fov="500"/>
+      <min pan="500" tilt="-90" fovpixel="2"/>
+      <max fovstereographic="330" pan="360" tilt="90" fovfisheye="360" fov="140" scaletofit="0"/>
+    </view>
+    <userdata comment="" longitude="" heading="0" customnodeid="" latitude="" author="JP爵攝數位影像 | JP Image Studio" copyright="" nodeid="node4" title="花蓮BV民宿｜Coffee &amp; Tea Bar" source="Canon R6 + EF 24 - 70mm + Flash" info="花蓮在地小點心與南投縣民間鄉高山茶包" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心我們準備了花蓮在地特色小品：&#xa;花蓮特產的蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，甜而不膩，充滿家鄉味。&lt;/p>&#xa;&lt;p>一旁搭配嚴選南投名間小葉種嫩芽手摘製成的蜜香紅茶，以及融合台灣中海拔高山烏龍及無發酵高山綠茶調製而成的金烏龍綠茶，茶香醇厚，口感順滑，為旅程開啟溫潤的序曲。&lt;/p>&#xa;&lt;div>" tags="Desktop" datetime="2025/10/28 13:43"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label width="180" bordercolor="0x000000" textalpha="1" border="1" height="20" wordwrap="1" borderradius="1" backgroundcolor="0xffffff" background="1" backgroundalpha="1" textcolor="0x000000" borderalpha="1" enabled="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" borderalpha="1" backgroundcolor="0x0000ff"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" zoomafteroutfov="40" zoomafterinfov="140" zoomfov="40" delay="none" zoomoutpause="1" zoomin="0" type="crossdissolve" softedge="0" zoomspeed="2" zoomout="0" blendcolor="0x000000" enabled="1"/>
+    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboard="0" invertwheel="0" rubberband="0" contextfullscreen="1" contextvr="1" lockedwheel="0" speedwheel="1" sensitivity="8" invertcontrol="1" zoomcentercursor="1" lockedmouse="0" lockedkeyboardzoom="0" dblclickfullscreen="0" simulatemass="1" hideabout="0"/>
+  </panorama>
+  <masternode>
+    <userdata comment="" title="花蓮BV民宿｜虛擬導覽" description="由 JP爵攝數位影像拍攝與製作的高品質虛擬導覽，採 Flambient 與自然光控制，呈現空間的真實光感與動線。" tags="" author="JP爵攝數位影像 | JP Image Studio" copyright="© 2025 JP爵攝數位影像 (JP Image Studio). All rights reserved."/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
