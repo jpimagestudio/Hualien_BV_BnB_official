@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="7.1.11" start="node1" apprev="21010" hassounds="0">
+  <panorama id="node1">
+    <input cylinder="1" levelingpitch="0" levelbiashidpi="1.000" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" height="3585" overlap="1" levelingroll="0" width="5378" flat="1" leveltilesize="510" levelbias="0.400">
+      <level width="5378" height="3585" predecode="0" preload="0"/>
+      <level width="2689" height="1792" predecode="0" preload="0"/>
+      <level width="1344" height="896" predecode="0" preload="0"/>
+      <level width="672" height="448" predecode="0" preload="0"/>
+      <level width="336" height="224" predecode="1" preload="1"/>
+      <preview color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="500" tilt="0"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fov="100" fovstereographic="330" scaletofit="0" tilt="90"/>
+    </view>
+    <userdata author="James Lee" info="" customnodeid="" tags="BV|Meal" heading="0" title="漢堡" datetime="2025/10/21 16:19" nodeid="node1" latitude="" longitude="" source="" copyright="jp-image.space" comment="" description="聽著音樂享受慵懶的時光，來一份闆娘親手特製早餐，迎接早晨的悠閒吧～ &#xa;&#xa;主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或土雞水煮蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。&#xa;水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。&#xa;&#xa;餐點採用當季食材，如有異動不另行更新。"/>
+    <hotspots width="180" wordwrap="1" height="20" smoothmovement="0">
+      <label bordercolor="0x000000" height="20" borderradius="1" border="1" background="1" width="180" textcolor="0x000000" textalpha="1" borderalpha="1" enabled="1" wordwrap="1" backgroundalpha="1" backgroundcolor="0xffffff"/>
+      <polystyle bordercolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+    </hotspots>
+    <media/>
+    <transition blendcolor="0x000000" zoomin="0" delay="none" blendtime="1" zoomoutpause="1" softedge="0" zoomout="0" type="crossdissolve" enabled="1" zoomfov="40" zoomafterinfov="140" zoomafteroutfov="40" zoomspeed="2"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
+    <control contextfullscreen="1" invertcontrol="1" contextvr="1" lockedkeyboardzoom="0" zoomcentercursor="1" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" lockedwheel="0" rubberband="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" hideabout="0" sensitivity="8" invertwheel="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input cylinder="1" levelingpitch="0" levelbiashidpi="1.000" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1999" overlap="1" levelingroll="0" width="3000" flat="1" leveltilesize="510" levelbias="0.400">
+      <level width="3000" height="1999" predecode="0" preload="0"/>
+      <level width="1500" height="999" predecode="0" preload="0"/>
+      <level width="750" height="499" predecode="0" preload="0"/>
+      <level width="375" height="249" predecode="1" preload="1"/>
+      <preview color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="100" tilt="0"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fov="140" fovstereographic="330" scaletofit="0" tilt="90"/>
+    </view>
+    <userdata author="James Lee" info="" customnodeid="" tags="BV|canonR6|Meal|Pano" heading="0" title="水煮蛋" datetime="2025/10/8 15:37" nodeid="node2" latitude="" longitude="" source="" copyright="jp-image.space" comment="" description="聽著音樂享受慵懶的時光，來一份闆娘親手特製早餐，迎接早晨的悠閒吧～ &#xa;&#xa;主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或土雞水煮蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。&#xa;水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。&#xa;&#xa;餐點採用當季食材，如有異動不另行更新。"/>
+    <hotspots width="180" wordwrap="1" height="20" smoothmovement="0">
+      <label bordercolor="0x000000" height="20" borderradius="1" border="1" background="1" width="180" textcolor="0x000000" textalpha="1" borderalpha="1" enabled="1" wordwrap="1" backgroundalpha="1" backgroundcolor="0xffffff"/>
+      <polystyle bordercolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+    </hotspots>
+    <media/>
+    <transition blendcolor="0x000000" zoomin="0" delay="none" blendtime="1" zoomoutpause="1" softedge="0" zoomout="0" type="crossdissolve" enabled="1" zoomfov="40" zoomafterinfov="140" zoomafteroutfov="40" zoomspeed="2"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
+    <control contextfullscreen="1" invertcontrol="1" contextvr="1" lockedkeyboardzoom="0" zoomcentercursor="1" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" lockedwheel="0" rubberband="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" hideabout="0" sensitivity="8" invertwheel="0"/>
+  </panorama>
+  <masternode>
+    <userdata author="" copyright="" tags="" title="" comment="" description=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+    <translations>
+      <json>{"languages":["en"],"projectLanguage":"zh-TW","translations":{"2025/10/21 16:19":[""],"2025/10/8 15:37":[""],"Enter Fullscreen":[""],"Enter VR":[""],"Exit Fullscreen":[""],"James Lee":[""],"jp-image.space":[""],"水煮蛋":["Egg"],"漢堡":["Hanbegger"],"聽著音樂享受慵懶的時光，來一份闆娘親手特製早餐，迎接早晨的悠閒吧～ \n\n主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或土雞水煮蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。\n水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。\n\n餐點採用當季食材，如有異動不另行更新。":["Listen to the music and enjoy the lazy time, and welcome the leisurely morning with the owner's special breakfast!\n\nMain course: Pan-fried bone-in German sausage or cinnamon chicken cheeseburger, warm salad with creamy vegetables, soft-boiled egg or poached egg with chicken, crispy Corsage drizzled with natural honey and a cup of strong coffee or honey-scented black tea.\nThe fruit plate is made with seasonal fruits from Hualien, which adds a refreshing color to the start of the day, so the morning rhythm is just right.\n\nMeals are prepared with seasonal ingredients and are subject to change without prior notice。"]}}</json>
+      <projecttranslation langcode="zh-TW" langname="繁體中文"/>
+      <projecttranslation langcode="en" langname="English"/>
+    </translations>
+  </masternode>
+</tour>

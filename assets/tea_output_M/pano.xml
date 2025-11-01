@@ -1,55 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour appversion="7.1.11" apprev="21010" hassounds="0" start="node1">
+<tour appversion="7.1.11" start="node1" apprev="21010" hassounds="0">
   <panorama id="node1">
-    <input width="1600" leveltilesize="510" cylinder="1" height="2400" overlap="1" levelbias="0.400" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" flat="1" levelingpitch="0" levelbiashidpi="1.000">
-      <level width="1600" predecode="0" height="2400" preload="0"/>
-      <level width="800" predecode="0" height="1200" preload="0"/>
-      <level width="400" predecode="0" height="600" preload="0"/>
-      <level width="200" predecode="1" height="300" preload="1"/>
+    <input cylinder="1" levelingpitch="0" levelbiashidpi="1.000" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" height="2400" overlap="1" levelingroll="0" width="1600" flat="1" leveltilesize="510" levelbias="0.400">
+      <level width="1600" height="2400" predecode="0" preload="0"/>
+      <level width="800" height="1200" predecode="0" preload="0"/>
+      <level width="400" height="600" predecode="0" preload="0"/>
+      <level width="200" height="300" predecode="1" preload="1"/>
       <preview color="0x808080"/>
     </input>
-    <view pannorth="0" fovmode="2">
-      <start pan="0" tilt="0" fov="500"/>
-      <min pan="0" tilt="-90" fovpixel="2"/>
-      <max fovstereographic="330" pan="360" tilt="90" fovfisheye="360" fov="140" scaletofit="0"/>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="500" tilt="0"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fov="140" fovstereographic="330" scaletofit="0" tilt="90"/>
     </view>
-    <userdata comment="" longitude="" heading="0" customnodeid="" latitude="" author="JP爵攝數位影像 | JP Image Studio" copyright="" nodeid="node1" title="花蓮BV民宿｜Coffee &amp; Tea Bar" source="Canon R6 + EF 24 - 70mm + Flash" info="花蓮在地小點心與南投縣民間鄉高山茶包" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心我們準備了花蓮在地特色小品：&#xa;花蓮特產的蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，甜而不膩，充滿家鄉味。&lt;/p>&#xa;&lt;p>一旁搭配嚴選南投名間小葉種嫩芽手摘製成的蜜香紅茶，以及融合台灣中海拔高山烏龍及無發酵高山綠茶調製而成的金烏龍綠茶，茶香醇厚，口感順滑，為旅程開啟溫潤的序曲。&lt;/p>&#xa;&lt;div>" tags="Mobile" datetime="2025/10/28 13:14"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label width="180" bordercolor="0x000000" textalpha="1" border="1" height="20" wordwrap="1" borderradius="1" backgroundcolor="0xffffff" background="1" backgroundalpha="1" textcolor="0x000000" borderalpha="1" enabled="1"/>
-      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" borderalpha="1" backgroundcolor="0x0000ff"/>
+    <userdata author="JP爵攝數位影像 | JP Image Studio" info="花蓮在地小點心與南投縣民間鄉高山茶包" customnodeid="" tags="Mobile" heading="0" title="花蓮BV民宿｜Coffee &amp; Tea Bar" datetime="2025/10/28 13:14" nodeid="node1" latitude="" longitude="" source="Canon R6 + EF 24 - 70mm + Flash" copyright="" comment="" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心準備了幾樣花蓮在地的小點心： 蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，香氣適中、甜度剛好，是我們很想讓旅客品嚐的在地風味。&lt;/p>&#xa;&lt;p>一旁搭配兩款茶飲——嚴選南投名間小葉種嫩芽製成的蜜香紅茶，與融合中海拔高山烏龍茶和綠茶的金烏龍綠茶。茶香柔順、回甘清爽，讓您吃小點心時可以解解渴。&lt;/p>&#xa;&lt;div>"/>
+    <hotspots width="180" wordwrap="1" height="20" smoothmovement="0">
+      <label bordercolor="0x000000" height="20" borderradius="1" border="1" background="1" width="180" textcolor="0x000000" textalpha="1" borderalpha="1" enabled="1" wordwrap="1" backgroundalpha="1" backgroundcolor="0xffffff"/>
+      <polystyle bordercolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
     </hotspots>
     <media/>
-    <transition blendtime="1" zoomafteroutfov="40" zoomafterinfov="140" zoomfov="40" delay="none" zoomoutpause="1" zoomin="0" type="crossdissolve" softedge="0" zoomspeed="2" zoomout="0" blendcolor="0x000000" enabled="1"/>
-    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control contextprojections="0" lockedkeyboard="0" invertwheel="0" rubberband="0" contextfullscreen="1" contextvr="1" lockedwheel="0" speedwheel="1" sensitivity="8" invertcontrol="1" zoomcentercursor="1" lockedmouse="0" lockedkeyboardzoom="0" dblclickfullscreen="0" simulatemass="1" hideabout="0"/>
+    <transition blendcolor="0x000000" zoomin="0" delay="none" blendtime="1" zoomoutpause="1" softedge="0" zoomout="0" type="crossdissolve" enabled="1" zoomfov="40" zoomafterinfov="140" zoomafteroutfov="40" zoomspeed="2"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
+    <control contextfullscreen="1" invertcontrol="1" contextvr="1" lockedkeyboardzoom="0" zoomcentercursor="1" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" lockedwheel="0" rubberband="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" hideabout="0" sensitivity="8" invertwheel="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input cylinder="1" levelingpitch="0" levelbiashidpi="1.000" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1600" overlap="1" levelingroll="0" width="2400" flat="1" leveltilesize="510" levelbias="0.400">
+      <level width="2400" height="1600" predecode="0" preload="0"/>
+      <level width="1200" height="800" predecode="0" preload="0"/>
+      <level width="600" height="400" predecode="0" preload="0"/>
+      <level width="300" height="200" predecode="1" preload="1"/>
+      <preview color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="500" tilt="0"/>
+      <min pan="500" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fov="140" fovstereographic="330" scaletofit="0" tilt="90"/>
+    </view>
+    <userdata author="JP爵攝數位影像 | JP Image Studio" info="花蓮在地小點心與南投縣民間鄉高山茶包" customnodeid="" tags="Desktop" heading="0" title="花蓮BV民宿｜Coffee &amp; Tea Bar" datetime="2025/10/28 13:18" nodeid="node2" latitude="" longitude="" source="Canon R6 + EF 24 - 70mm + Flash" copyright="" comment="" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心準備了幾樣花蓮在地的小點心： 蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，香氣適中、甜度剛好，是我們很想讓旅客品嚐的在地風味。&lt;/p>&#xa;&lt;p>一旁搭配兩款茶飲——嚴選南投名間小葉種嫩芽製成的蜜香紅茶，與融合中海拔高山烏龍茶和綠茶的金烏龍綠茶。茶香柔順、回甘清爽，讓您吃小點心時可以解解渴。&lt;/p>&#xa;&lt;div>"/>
+    <hotspots width="180" wordwrap="1" height="20" smoothmovement="0">
+      <label bordercolor="0x000000" height="20" borderradius="1" border="1" background="1" width="180" textcolor="0x000000" textalpha="1" borderalpha="1" enabled="1" wordwrap="1" backgroundalpha="1" backgroundcolor="0xffffff"/>
+      <polystyle bordercolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+    </hotspots>
+    <media/>
+    <transition blendcolor="0x000000" zoomin="0" delay="none" blendtime="1" zoomoutpause="1" softedge="0" zoomout="0" type="crossdissolve" enabled="1" zoomfov="40" zoomafterinfov="140" zoomafteroutfov="40" zoomspeed="2"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
+    <control contextfullscreen="1" invertcontrol="1" contextvr="1" lockedkeyboardzoom="0" zoomcentercursor="1" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" lockedwheel="0" rubberband="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" hideabout="0" sensitivity="8" invertwheel="0"/>
   </panorama>
   <panorama id="node3">
-    <input width="1600" leveltilesize="510" cylinder="1" height="2400" overlap="1" levelbias="0.400" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" flat="1" levelingpitch="0" levelbiashidpi="1.000">
-      <level width="1600" predecode="0" height="2400" preload="0"/>
-      <level width="800" predecode="0" height="1200" preload="0"/>
-      <level width="400" predecode="0" height="600" preload="0"/>
-      <level width="200" predecode="1" height="300" preload="1"/>
+    <input cylinder="1" levelingpitch="0" levelbiashidpi="1.000" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" height="2400" overlap="1" levelingroll="0" width="1600" flat="1" leveltilesize="510" levelbias="0.400">
+      <level width="1600" height="2400" predecode="0" preload="0"/>
+      <level width="800" height="1200" predecode="0" preload="0"/>
+      <level width="400" height="600" predecode="0" preload="0"/>
+      <level width="200" height="300" predecode="1" preload="1"/>
       <preview color="0x808080"/>
     </input>
-    <view pannorth="0" fovmode="2">
-      <start pan="0" tilt="0" fov="500"/>
-      <min pan="500" tilt="-90" fovpixel="2"/>
-      <max fovstereographic="330" pan="360" tilt="90" fovfisheye="360" fov="140" scaletofit="0"/>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="500" tilt="0"/>
+      <min pan="500" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fov="140" fovstereographic="330" scaletofit="0" tilt="90"/>
     </view>
-    <userdata comment="" longitude="" heading="0" customnodeid="" latitude="" author="JP爵攝數位影像 | JP Image Studio" copyright="" nodeid="node3" title="花蓮BV民宿｜Coffee &amp; Tea Bar" source="Canon R6 + EF 24 - 70mm + Flash" info="花蓮在地小點心與南投縣民間鄉高山茶包" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心我們準備了花蓮在地特色小品：&#xa;花蓮特產的蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，甜而不膩，充滿家鄉味。&lt;/p>&#xa;&lt;p>一旁搭配嚴選南投名間小葉種嫩芽手摘製成的蜜香紅茶，以及融合台灣中海拔高山烏龍及無發酵高山綠茶調製而成的金烏龍綠茶，茶香醇厚，口感順滑，為旅程開啟溫潤的序曲。&lt;/p>&#xa;&lt;div>" tags="Mobile" datetime="2025/10/28 13:25"/>
-    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
-      <label width="180" bordercolor="0x000000" textalpha="1" border="1" height="20" wordwrap="1" borderradius="1" backgroundcolor="0xffffff" background="1" backgroundalpha="1" textcolor="0x000000" borderalpha="1" enabled="1"/>
-      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" mode="0" borderalpha="1" backgroundcolor="0x0000ff"/>
+    <userdata author="JP爵攝數位影像 | JP Image Studio" info="花蓮在地小點心與南投縣民間鄉高山茶包" customnodeid="" tags="Mobile" heading="0" title="花蓮BV民宿｜Coffee &amp; Tea Bar" datetime="2025/10/28 13:25" nodeid="node3" latitude="" longitude="" source="Canon R6 + EF 24 - 70mm + Flash" copyright="" comment="" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心準備了幾樣花蓮在地的小點心： 蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，香氣適中、甜度剛好，是我們很想讓旅客品嚐的在地風味。&lt;/p>&#xa;&lt;p>一旁搭配兩款茶飲——嚴選南投名間小葉種嫩芽製成的蜜香紅茶，與融合中海拔高山烏龍茶和綠茶的金烏龍綠茶。茶香柔順、回甘清爽，讓您吃小點心時可以解解渴。&lt;/p>&#xa;&lt;div>"/>
+    <hotspots width="180" wordwrap="1" height="20" smoothmovement="0">
+      <label bordercolor="0x000000" height="20" borderradius="1" border="1" background="1" width="180" textcolor="0x000000" textalpha="1" borderalpha="1" enabled="1" wordwrap="1" backgroundalpha="1" backgroundcolor="0xffffff"/>
+      <polystyle bordercolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
     </hotspots>
     <media/>
-    <transition blendtime="1" zoomafteroutfov="40" zoomafterinfov="140" zoomfov="40" delay="none" zoomoutpause="1" zoomin="0" type="crossdissolve" softedge="0" zoomspeed="2" zoomout="0" blendcolor="0x000000" enabled="1"/>
-    <animation animsequence="Animation01" clipsrandom="0" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control contextprojections="0" lockedkeyboard="0" invertwheel="0" rubberband="0" contextfullscreen="1" contextvr="1" lockedwheel="0" speedwheel="1" sensitivity="8" invertcontrol="1" zoomcentercursor="1" lockedmouse="0" lockedkeyboardzoom="0" dblclickfullscreen="0" simulatemass="1" hideabout="0"/>
+    <transition blendcolor="0x000000" zoomin="0" delay="none" blendtime="1" zoomoutpause="1" softedge="0" zoomout="0" type="crossdissolve" enabled="1" zoomfov="40" zoomafterinfov="140" zoomafteroutfov="40" zoomspeed="2"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
+    <control contextfullscreen="1" invertcontrol="1" contextvr="1" lockedkeyboardzoom="0" zoomcentercursor="1" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" lockedwheel="0" rubberband="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" hideabout="0" sensitivity="8" invertwheel="0"/>
+  </panorama>
+  <panorama id="node4">
+    <input cylinder="1" levelingpitch="0" levelbiashidpi="1.000" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1600" overlap="1" levelingroll="0" width="2400" flat="1" leveltilesize="510" levelbias="0.400">
+      <level width="2400" height="1600" predecode="0" preload="0"/>
+      <level width="1200" height="800" predecode="0" preload="0"/>
+      <level width="600" height="400" predecode="0" preload="0"/>
+      <level width="300" height="200" predecode="1" preload="1"/>
+      <preview color="0x808080"/>
+    </input>
+    <view fovmode="2" pannorth="0">
+      <start pan="0" fov="500" tilt="0"/>
+      <min pan="500" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fov="140" fovstereographic="330" scaletofit="0" tilt="90"/>
+    </view>
+    <userdata author="JP爵攝數位影像 | JP Image Studio" info="花蓮在地小點心與南投縣民間鄉高山茶包" customnodeid="" tags="Desktop" heading="0" title="花蓮BV民宿｜Coffee &amp; Tea Bar" datetime="2025/10/28 13:43" nodeid="node4" latitude="" longitude="" source="Canon R6 + EF 24 - 70mm + Flash" copyright="" comment="" description="&lt;div class=&quot;ggmarkdown&quot;>&lt;p>迎賓點心準備了幾樣花蓮在地的小點心： 蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，香氣適中、甜度剛好，是我們很想讓旅客品嚐的在地風味。&lt;/p>&#xa;&lt;p>一旁搭配兩款茶飲——嚴選南投名間小葉種嫩芽製成的蜜香紅茶，與融合中海拔高山烏龍茶和綠茶的金烏龍綠茶。茶香柔順、回甘清爽，讓您吃小點心時可以解解渴。&lt;/p>&#xa;&lt;div>"/>
+    <hotspots width="180" wordwrap="1" height="20" smoothmovement="0">
+      <label bordercolor="0x000000" height="20" borderradius="1" border="1" background="1" width="180" textcolor="0x000000" textalpha="1" borderalpha="1" enabled="1" wordwrap="1" backgroundalpha="1" backgroundcolor="0xffffff"/>
+      <polystyle bordercolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098" handcursor="1" backgroundcolor="0x0000ff"/>
+    </hotspots>
+    <media/>
+    <transition blendcolor="0x000000" zoomin="0" delay="none" blendtime="1" zoomoutpause="1" softedge="0" zoomout="0" type="crossdissolve" enabled="1" zoomfov="40" zoomafterinfov="140" zoomafteroutfov="40" zoomspeed="2"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" clipsrandom="0" animsequence="Animation01"/>
+    <control contextfullscreen="1" invertcontrol="1" contextvr="1" lockedkeyboardzoom="0" zoomcentercursor="1" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" lockedwheel="0" rubberband="0" speedwheel="1" contextprojections="0" lockedkeyboard="0" hideabout="0" sensitivity="8" invertwheel="0"/>
   </panorama>
   <masternode>
-    <userdata comment="" title="花蓮BV民宿｜虛擬導覽" description="由 JP爵攝數位影像拍攝與製作的高品質虛擬導覽，採 Flambient 與自然光控制，呈現空間的真實光感與動線。" tags="" author="JP爵攝數位影像 | JP Image Studio" copyright="© 2025 JP爵攝數位影像 (JP Image Studio). All rights reserved."/>
+    <userdata author="JP爵攝數位影像 | JP Image Studio" copyright="© 2025 JP爵攝數位影像 (JP Image Studio). All rights reserved." tags="" title="花蓮BV民宿｜虛擬導覽" comment="" description="由 JP爵攝數位影像拍攝與製作的高品質虛擬導覽，採 Flambient 與自然光控制，呈現空間的真實光感與動線。"/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>
+    <translations>
+      <json>{"languages":["en"],"projectLanguage":"zh-TW","translations":{"2025/10/28 13:18":[""],"2025/10/28 13:43":[""],"&lt;div class=\"ggmarkdown\">&lt;p>迎賓點心準備了幾樣花蓮在地的小點心： 蕃薯餅、地瓜沙其瑪與芋頭沙其瑪，香氣適中、甜度剛好，是我們很想讓旅客品嚐的在地風味。&lt;/p>\n&lt;p>一旁搭配兩款茶飲——嚴選南投名間小葉種嫩芽製成的蜜香紅茶，與融合中海拔高山烏龍茶和綠茶的金烏龍綠茶。茶香柔順、回甘清爽，讓您吃小點心時可以解解渴。&lt;/p>\n&lt;div>":["We’ve prepared a few local treats from Hualien to welcome you —\nsweet potato crisps, brown sugar rice puffs, and taro rice puffs，\nThey’re lightly sweet with a gentle aroma, a simple taste of Hualien we’d love to share with our guests。\n\nAlongside the snacks, you’ll find two kinds of tea:\nHoney Scented Black Tea made from hand-picked tea buds in Mingjian, Nantou,\nand Golden Oolong Green Tea — a smooth blend of high-mountain oolong and green tea\nBoth are mild and refreshing, the perfect companions to enjoy with your snacks"],"Canon R6 + EF 24 - 70mm + Flash":[""],"Enter Fullscreen":[""],"Enter VR":[""],"Exit Fullscreen":[""],"JP爵攝數位影像 | JP Image Studio":[""],"© 2025 JP爵攝數位影像 (JP Image Studio). All rights reserved.":[""],"由 JP爵攝數位影像拍攝與製作的高品質虛擬導覽，採 Flambient 與自然光控制，呈現空間的真實光感與動線。":["A high-quality virtual tour photographed and produced by JP Image Studio, utilizing the Flambient technique and natural light control to present the authentic lighting and spatial flow of the environment。"],"花蓮BV民宿｜Coffee &amp; Tea Bar":["Hualien BV B&amp;B｜Coffee &amp; Tea Bar"],"花蓮BV民宿｜虛擬導覽":["Hualien BV B&amp;B | Virtual Tour"],"花蓮在地小點心與南投縣民間鄉高山茶包":["Local Hualien Treats &amp; High-Mountain Tea from Mingjian, Nantou"]}}</json>
+      <projecttranslation langcode="zh-TW" langname="繁體中文"/>
+      <projecttranslation langcode="en" langname="English"/>
+    </translations>
   </masternode>
 </tour>
