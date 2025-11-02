@@ -1,60 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour start="node1" appversion="7.1.11" hassounds="0" apprev="21010">
+<tour hassounds="0" start="node1" apprev="21010" appversion="7.1.11">
   <panorama id="node1">
-    <input leveltilesize="510" levelbiashidpi="1.000" levelingroll="0" cylinder="1" overlap="1" width="5378" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" flat="1" height="3585" levelbias="0.400">
-      <level width="5378" predecode="0" height="3585" preload="0"/>
-      <level width="2689" predecode="0" height="1792" preload="0"/>
-      <level width="1344" predecode="0" height="896" preload="0"/>
-      <level width="672" predecode="0" height="448" preload="0"/>
-      <level width="336" predecode="1" height="224" preload="1"/>
+    <input leveltilesize="510" height="3585" flat="1" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" width="5378" levelbias="0.400" overlap="1" levelbiashidpi="1.000" levelingroll="0" levelingpitch="0" cylinder="1">
+      <level predecode="0" width="5378" height="3585" preload="0"/>
+      <level predecode="0" width="2689" height="1792" preload="0"/>
+      <level predecode="0" width="1344" height="896" preload="0"/>
+      <level predecode="0" width="672" height="448" preload="0"/>
+      <level predecode="1" width="336" height="224" preload="1"/>
       <preview color="0x808080"/>
     </input>
-    <view pannorth="0" fovmode="2">
-      <start pan="0" tilt="0" fov="500"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="0" pan="360" fovstereographic="330" tilt="90" fov="100"/>
+    <view fovmode="2" pannorth="0">
+      <start tilt="0" pan="0" fov="500"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" pan="360" fov="100" fovstereographic="330" fovfisheye="360" scaletofit="0"/>
     </view>
-    <userdata title="早餐樣貌" customnodeid="" heading="0" description="聽著音樂享受慵懶的時光，來一份闆娘親手特製早餐，迎接早晨的悠閒吧～ &#xa;&#xa;主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或土雞水煮蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。&#xa;水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。&#xa;&#xa;餐點採用當季食材，如有異動不另行更新。" datetime="2025/10/21 16:19" tags="BV|Meal" latitude="" nodeid="node1" comment="" info="" source="" longitude="" copyright="jp-image.space" author="James Lee"/>
-    <hotspots width="180" wordwrap="1" smoothmovement="0" height="20">
-      <label textcolor="0x000000" backgroundcolor="0xffffff" borderradius="1" borderalpha="1" enabled="1" backgroundalpha="1" width="180" background="1" bordercolor="0x000000" border="1" wordwrap="1" height="20" textalpha="1"/>
-      <polystyle backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1"/>
+    <userdata copyright="jp-image.space" description="聽著音樂享受慵懶的時光，來一份我們親手製作的早餐，迎接早晨的悠閒吧～ &#xa;&#xa;主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或水煮土雞蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。&#xa;&#xa;水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。&#xa;&#xa;餐點採用當季食材，如有異動的話，我們想到再更新。" nodeid="node1" title="早餐樣貌" source="" comment="" latitude="" longitude="" tags="BV|Meal" heading="0" datetime="2025/10/21 16:19" customnodeid="" info="" author="James Lee"/>
+    <hotspots wordwrap="1" width="180" height="20" smoothmovement="0">
+      <label enabled="1" bordercolor="0x000000" wordwrap="1" background="1" textalpha="1" height="20" backgroundcolor="0xffffff" borderradius="1" textcolor="0x000000" width="180" backgroundalpha="1" border="1" borderalpha="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" borderalpha="1" mode="0"/>
     </hotspots>
     <media/>
-    <transition zoomin="0" blendtime="1" zoomafterinfov="140" softedge="0" type="crossdissolve" enabled="1" delay="none" zoomafteroutfov="40" zoomoutpause="1" zoomout="0" blendcolor="0x000000" zoomspeed="2" zoomfov="40"/>
-    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control contextprojections="0" lockedkeyboard="0" hideabout="0" invertwheel="0" lockedwheel="0" zoomcentercursor="1" speedwheel="1" contextfullscreen="1" simulatemass="1" rubberband="0" sensitivity="8" dblclickfullscreen="0" contextvr="1" lockedkeyboardzoom="0" lockedmouse="0" invertcontrol="1"/>
+    <transition enabled="1" zoomspeed="2" blendcolor="0x000000" zoomoutpause="1" zoomout="0" delay="none" zoomafteroutfov="40" blendtime="1" type="crossdissolve" zoomin="0" zoomafterinfov="140" zoomfov="40" softedge="0"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0"/>
+    <control simulatemass="1" contextfullscreen="1" sensitivity="8" rubberband="0" dblclickfullscreen="0" hideabout="0" lockedkeyboardzoom="0" lockedwheel="0" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" lockedkeyboard="0" contextvr="1" contextprojections="0" speedwheel="1"/>
   </panorama>
   <panorama id="node2">
-    <input leveltilesize="510" levelbiashidpi="1.000" levelingroll="0" cylinder="1" overlap="1" width="3000" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" flat="1" height="1999" levelbias="0.400">
-      <level width="3000" predecode="0" height="1999" preload="0"/>
-      <level width="1500" predecode="0" height="999" preload="0"/>
-      <level width="750" predecode="0" height="499" preload="0"/>
-      <level width="375" predecode="1" height="249" preload="1"/>
+    <input leveltilesize="510" height="1999" flat="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3000" levelbias="0.400" overlap="1" levelbiashidpi="1.000" levelingroll="0" levelingpitch="0" cylinder="1">
+      <level predecode="0" width="3000" height="1999" preload="0"/>
+      <level predecode="0" width="1500" height="999" preload="0"/>
+      <level predecode="0" width="750" height="499" preload="0"/>
+      <level predecode="1" width="375" height="249" preload="1"/>
       <preview color="0x808080"/>
     </input>
-    <view pannorth="0" fovmode="2">
-      <start pan="0" tilt="0" fov="100"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovfisheye="360" scaletofit="0" pan="360" fovstereographic="330" tilt="90" fov="140"/>
+    <view fovmode="2" pannorth="0">
+      <start tilt="0" pan="0" fov="100"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max tilt="90" pan="360" fov="140" fovstereographic="330" fovfisheye="360" scaletofit="0"/>
     </view>
-    <userdata title="早餐樣貌" customnodeid="" heading="0" description="聽著音樂享受慵懶的時光，來一份闆娘親手特製早餐，迎接早晨的悠閒吧～ &#xa;&#xa;主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或土雞水煮蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。&#xa;水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。&#xa;&#xa;餐點採用當季食材，如有異動不另行更新。" datetime="2025/10/8 15:37" tags="BV|canonR6|Meal|Pano" latitude="" nodeid="node2" comment="" info="" source="" longitude="" copyright="jp-image.space" author="James Lee"/>
-    <hotspots width="180" wordwrap="1" smoothmovement="0" height="20">
-      <label textcolor="0x000000" backgroundcolor="0xffffff" borderradius="1" borderalpha="1" enabled="1" backgroundalpha="1" width="180" background="1" bordercolor="0x000000" border="1" wordwrap="1" height="20" textalpha="1"/>
-      <polystyle backgroundalpha="0.25098" mode="0" bordercolor="0x0000ff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="1"/>
+    <userdata copyright="jp-image.space" description="聽著音樂享受慵懶的時光，來一份我們親手製作的早餐，迎接早晨的悠閒吧～ &#xa;&#xa;主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或水煮土雞蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。&#xa;&#xa;水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。&#xa;&#xa;餐點採用當季食材，如有異動的話，我們想到再更新。" nodeid="node2" title="早餐樣貌" source="" comment="" latitude="" longitude="" tags="BV|canonR6|Meal|Pano" heading="0" datetime="2025/10/8 15:37" customnodeid="" info="" author="James Lee"/>
+    <hotspots wordwrap="1" width="180" height="20" smoothmovement="0">
+      <label enabled="1" bordercolor="0x000000" wordwrap="1" background="1" textalpha="1" height="20" backgroundcolor="0xffffff" borderradius="1" textcolor="0x000000" width="180" backgroundalpha="1" border="1" borderalpha="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundalpha="0.25098" backgroundcolor="0x0000ff" handcursor="1" borderalpha="1" mode="0"/>
     </hotspots>
     <media/>
-    <transition zoomin="0" blendtime="1" zoomafterinfov="140" softedge="0" type="crossdissolve" enabled="1" delay="none" zoomafteroutfov="40" zoomoutpause="1" zoomout="0" blendcolor="0x000000" zoomspeed="2" zoomfov="40"/>
-    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
-    <control contextprojections="0" lockedkeyboard="0" hideabout="0" invertwheel="0" lockedwheel="0" zoomcentercursor="1" speedwheel="1" contextfullscreen="1" simulatemass="1" rubberband="0" sensitivity="8" dblclickfullscreen="0" contextvr="1" lockedkeyboardzoom="0" lockedmouse="0" invertcontrol="1"/>
+    <transition enabled="1" zoomspeed="2" blendcolor="0x000000" zoomoutpause="1" zoomout="0" delay="none" zoomafteroutfov="40" blendtime="1" type="crossdissolve" zoomin="0" zoomafterinfov="140" zoomfov="40" softedge="0"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0"/>
+    <control simulatemass="1" contextfullscreen="1" sensitivity="8" rubberband="0" dblclickfullscreen="0" hideabout="0" lockedkeyboardzoom="0" lockedwheel="0" lockedmouse="0" invertwheel="0" zoomcentercursor="1" invertcontrol="1" lockedkeyboard="0" contextvr="1" contextprojections="0" speedwheel="1"/>
   </panorama>
   <masternode>
-    <userdata title="" tags="" comment="" description="" copyright="" author=""/>
+    <userdata comment="" tags="" copyright="" description="" title="" author=""/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>
     <translations>
-      <json>{"languages":["en","ja","ko"],"projectLanguage":"zh-TW","translations":{"2025/10/21 16:19":["","",""],"2025/10/8 15:37":["","",""],"Enter Fullscreen":["","",""],"Enter VR":["","",""],"Exit Fullscreen":["","",""],"James Lee":["","",""],"jp-image.space":["","",""],"早餐樣貌":["","朝食イメージ","아침 식사 모습"],"聽著音樂享受慵懶的時光，來一份闆娘親手特製早餐，迎接早晨的悠閒吧～ \n\n主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或土雞水煮蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。\n水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。\n\n餐點採用當季食材，如有異動不另行更新。":["Listen to the music and enjoy the lazy time, and welcome the leisurely morning with the owner's special breakfast!\n\nMain course: Pan-fried bone-in German sausage or cinnamon chicken cheeseburger, warm salad with creamy vegetables, soft-boiled egg or poached egg with chicken, crispy Corsage drizzled with natural honey and a cup of strong coffee or honey-scented black tea.\nThe fruit plate is made with seasonal fruits from Hualien, which adds a refreshing color to the start of the day, so the morning rhythm is just right.\n\nMeals are prepared with seasonal ingredients and are subject to change without prior notice。","音楽を聴きながら、ゆったりとした時間を楽しみましょう。\nオーナー手作りの特製朝食で、穏やかな朝を迎えてください。\n\nメイン料理：骨付きドイツソーセージのソテー または グイディンチキンチーズバーガー、\nミルク風味の温野菜サラダ、ふんわりスクランブルエッグ または 放し飼い鶏のゆで卵。\nさらに、サクサクのクロワッサンに天然ハチミツを添え、\n香り豊かなコーヒー または 蜜香紅茶を一杯。\n\nフルーツプレートには花蓮産の旬の果物を使用し、爽やかな彩りを添えています。\nうん、この朝のリズム、ちょうどいい。\n\n※食材は季節により変更になる場合がございます。","음악을 들으며 여유로운 시간을 즐겨보세요.\n주인장이 직접 만든 특별한 아침 식사로 느긋한 아침을 맞이해 보세요.\n\n메인 요리: 노릇하게 구운 뼈 있는 독일식 소시지 또는 귀정닭 치즈버거,\n우유향이 나는 따뜻한 채소 샐러드, 부드러운 스크램블에그 또는 토종닭 삶은 달걀.\n여기에 바삭한 크루아상에 천연꿀을 곁들이고, 향긋한 커피나 밀향홍차 한 잔.\n\n과일 접시는 화롄 제철 과일로 구성되어 상쾌한 색을 더해줍니다.\n음, 아침의 리듬이 딱 좋아요.\n\n※ 식사는 제철 재료를 사용하며, 내용은 예고 없이 변경될 수 있습니다."]}}</json>
+      <json>{"languages":["de","en","ja","ko"],"projectLanguage":"zh-TW","translations":{"2025/10/21 16:19":["","","",""],"2025/10/8 15:37":["","","",""],"Enter Fullscreen":["","","",""],"Enter VR":["","","",""],"Exit Fullscreen":["","","",""],"James Lee":["","","",""],"jp-image.space":["","","",""],"早餐樣貌":["Frühstücksansicht","","朝食イメージ","아침 식사 모습"],"聽著音樂享受慵懶的時光，來一份我們親手製作的早餐，迎接早晨的悠閒吧～ \n\n主菜：香煎帶骨德式香腸或桂丁雞起司漢堡、奶香蔬菜溫沙拉、香嫩滑蛋或水煮土雞蛋，外加酥脆可頌淋上天然蜂蜜與一杯香濃咖啡或是蜜香紅茶。\n\n水果盤選用花蓮當季水果，讓一天的開始添加一點清爽的色彩，嗯～早晨的節奏就這樣剛剛好。\n\n餐點採用當季食材，如有異動的話，我們想到再更新。":["Genieße die entspannte Zeit am Morgen mit Musik und einem Frühstück, das wir selbst mit Liebe zubereitet haben.\n\nHauptgericht: Gebratene deutsche Bratwurst mit Knochen oder ein Guiding-Hähnchen-Cheeseburger, dazu ein warmes Gemüsesalat mit milchigem Aroma, weiches Rührei oder gekochtes Freilandhuhn-Ei.\nDazu ein knuspriges Croissant mit natürlichem Honig und eine Tasse aromatischer Kaffee oder Honig-Schwarztee.\n\nDer Obstteller besteht aus saisonalen Früchten aus Hualien und verleiht dem Start in den Tag eine erfrischende Note.\nAh, der Rhythmus des Morgens ist einfach perfekt so.\n\nDie Gerichte werden mit saisonalen Zutaten zubereitet; falls sich etwas ändert, aktualisieren wir es, wenn wir daran denken.","Enjoy a lazy morning with music and a breakfast handmade by us—start your day at an easy pace.\n\nMain course: Pan-seared bone-in German sausage or Guiding chicken cheese burger, creamy warm vegetable salad, soft scrambled eggs or boiled free-range egg, plus a crispy croissant drizzled with natural honey and a cup of rich coffee or honey-scented black tea.\n\nThe fruit plate features seasonal fruits from Hualien, adding a refreshing touch to the start of your day.\nAh—this is just the perfect rhythm for the morning.\n\nAll dishes are prepared with seasonal ingredients, and if anything changes, we’ll update it when we feel like it.","音楽を聴きながらゆったりとした時間を楽しみましょう。\n私たちが心を込めて作った朝食で、穏やかな朝を迎えてください。\n\n主菜：香ばしく焼いた骨付きドイツソーセージ、またはグイディンチキンチーズバーガー。\nミルクの風味が広がる温野菜サラダ、ふわとろスクランブルエッグ、または地鶏のゆで卵。\nさらに、サクサクのクロワッサンに天然ハチミツをかけ、香り高いコーヒーまたは蜜香紅茶を添えています。\n\nフルーツプレートには花蓮の旬の果物を使用し、さわやかな彩りを添えています。\nうん、朝のリズムはこれでちょうどいい。\n\n料理には季節の食材を使用しており、内容が変更になる場合があります。気が向いたら更新します。","음악을 들으며 여유로운 시간을 즐겨보세요.\n저희가 직접 만든 아침 식사로 느긋한 아침을 맞이해 보세요.\n\n메인 요리: 노릇하게 구운 뼈 있는 독일식 소시지 또는 귀정닭 치즈버거,\n우유향이 나는 따뜻한 채소 샐러드, 부드러운 스크램블에그 또는 토종닭 삶은 달걀.\n여기에 바삭한 크루아상에 천연꿀을 곁들이고, 향긋한 커피나 밀향홍차 한 잔.\n\n과일 접시는 화롄의 제철 과일로 구성되어 하루의 시작에 상쾌함을 더해줍니다.\n음, 아침의 리듬이 딱 좋네요.\n\n식사는 제철 식재료를 사용하며, 변경이 있을 경우 생각나면 업데이트하겠습니다."]}}</json>
       <projecttranslation langcode="zh-TW" langname="繁體中文"/>
+      <projecttranslation langcode="de" langname="Deutsch"/>
       <projecttranslation langcode="en" langname="English"/>
       <projecttranslation langcode="ja" langname="日本語"/>
       <projecttranslation langcode="ko" langname="한국어"/>

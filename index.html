@@ -7,7 +7,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta property="og:title" content="&#33457;&#34030;BV&#27665;&#23487; &#65372;&#34395;&#25836;&#23566;&#35261;">
-		<meta property="og:description" content="&#30001; JP&#29237;&#25885;&#25976;&#20301;&#24433;&#20687;&#25293;&#25885;&#33287;&#35069;&#20316;&#30340;&#39640;&#21697;&#36074;&#34395;&#25836;&#23566;&#35261;&#65292;&#25505; Flambient &#33287;&#33258;&#28982;&#20809;&#25511;&#21046;&#65292;&#21576;&#29694;&#31354;&#38291;&#30340;&#30495;&#23526;&#20809;&#24863;&#33287;&#21205;&#32218;&#12290;">
+		<meta property="og:description" content="&#30001; JP&#29237;&#25885;&#25976;&#20301;&#24433;&#20687;&#24037;&#20316;&#23460;&#25293;&#25885;&#33287;&#35069;&#20316;&#30340;&#39640;&#21697;&#36074;&#34395;&#25836;&#23566;&#35261;&#65292;&#25505; Flambient &#25216;&#34899;&#33287;&#33258;&#28982;&#20809;&#34701;&#21512;&#65292;&#21576;&#29694;&#31354;&#38291;&#30340;&#30495;&#23526;&#20809;&#24863;&#33287;&#33394;&#24425;&#12290;">
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta property="og:image" content="preview.jpg">
 		<style type="text/css" title="Default">
@@ -36,9 +36,9 @@
 	</head>
 	<body>
 <!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
-		<script type="text/javascript" src="pano2vr_player.js?ts=17274878">
+		<script type="text/javascript" src="pano2vr_player.js?ts=70041418">
 		</script>
-		<script type="text/javascript" src="skin.js?ts=17274878">
+		<script type="text/javascript" src="skin.js?ts=70041418">
 		</script>
 		<link rel="stylesheet" href="3rdparty/leaflet/leaflet.css"/>
 		<script src="3rdparty/leaflet/leaflet.js"></script>
@@ -91,12 +91,12 @@
 			pano=new pano2vrPlayer("container");
 			pano.startNode = startNode;
 			pano.startView = startView;
-			pano.setQueryParameter("ts=17274878")
+			pano.setQueryParameter("ts=70041418")
 			// add the skin object
 			skin=new pano2vrSkin(pano);
 			// load the configuration
 			window.addEventListener("load", function() {
-				pano.readConfigUrlAsync("pano.xml?ts=17274878");
+				pano.readConfigUrlAsync("pano.xml?ts=70041418");
 			});
 			if (window.navigator.userAgent.match(/Safari/i)) {
 				// fix for white borders, rotation on iPhone
