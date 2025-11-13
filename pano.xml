@@ -1,443 +1,443 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour apprev="21010" start="node10" hassounds="1" appversion="7.1.11">
+<tour hassounds="1" appversion="7.1.11" apprev="21010" start="node10">
   <panorama id="node10" hideabout="1">
-    <input leveltilesize="510" height="1932" width="1932" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="1932" width="1932" preload="0" predecode="0"/>
-      <level height="966" width="966" preload="0" predecode="0"/>
-      <level height="483" width="483" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1932" leveltilesize="510" height="1932" levelingroll="0" overlap="1">
+      <level width="1932" predecode="0" height="1932" preload="0"/>
+      <level width="966" predecode="0" height="966" preload="0"/>
+      <level width="483" predecode="1" height="483" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="174.578" fovmode="2">
-      <start fov="120" tilt="3.76639" pan="9.72252" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="3.76639" fov="120" pan="9.72252" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node10" comment="" datetime="2025/10/15 12:12" copyright="" info="開車入院時，請以倒車方式入院，並密切留意往來車輛動態。" customnodeid="" longitude="121.60522990" heading="174.578" title="花蓮BV民宿｜街景外觀" author="James Lee" description="街口往東走到底，有間投幣式自助洗衣店。&#xa;往西走，第一個路口旁有免費的公有停車場，此路口左轉後左邊第一個巷口內有收費停車場，步行約3分鐘" tags="outdoor|Street" latitude="23.98580292" source="Canon R6 + EF 8–15mm / 5EV HDR"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point01" title="庭院" tilt="0" skinid="ht_node" description="" pan="-3.76317" url="{node9}" target="$fwd"/>
-      <hotspot id="Point02" title="停車空間" tilt="-1.7" skinid="ht_info" description="民宿內附有一停車空間，採先到先用，不提供預定與保留服務。&#xa;&#xa;停車時請留意右側花圃以及左後方建物邊緣。&#xa;&#xa;出車時請留意左右兩側來車，請利用對街上的反光鏡檢查左側來車，並在車駛出前確定右側無來車。" pan="-342.09" url="" target=""/>
-      <hotspot id="Point03" title="往免費、收費停車場" tilt="-1.36" skinid="ht_info" description="往前走約180公尺有收費停車場（中山停車場）。&#xa;&#xa;前方75公尺處路口旁有免費公有停車場（明智停車場），此路口左轉進去第一個巷口左轉也有收費停車場（城中大樓停車場）。&#xa;&#xa;&#xa;如需詳細資訊，請點擊地圖按鈕查看地圖。&#xa;" pan="-62.85" url="" target=""/>
-      <hotspot id="Point05" title="City Wash 自助洗衣店" tilt="-0.2" skinid="ht_image_text" description="往前走約 3 分鐘即可抵達投幣式自助洗衣店 City Wash" pan="-269.06" url="images/IMG_0682.jpg" target=""/>
-      <hotspot id="Point04" title="禾亮家香草創意坊 &#xa;Pura Vida Herbs" tilt="1.58" skinid="ht_url" description="源自哥斯大黎加，當地的問候是「Pura Vida」，即「純粹的生命」，也是禾亮家品牌的靈感。「Pura Vida Herbs」，將對香草的熱情轉化為純粹的香草生活。" pan="-306.76" url="https://jpimagestudio.github.io/Pura-Vida-Herbs/" target="_blank"/>
+    <userdata datetime="2025/10/15 12:12" copyright="" comment="" info="開車入院時，請以倒車方式入院，並密切留意往來車輛動態。" longitude="121.60523392" tags="outdoor|Street" description="街口往東走到底，有間投幣式自助洗衣店。&#xa;往西走，第一個路口旁有免費的公有停車場，此路口左轉後左邊第一個巷口內有收費停車場，步行約3分鐘" title="花蓮BV民宿｜街景外觀" customnodeid="" latitude="23.98578577" heading="174.578" author="James Lee" source="Canon R6 + EF 8–15mm / 5EV HDR" nodeid="node10"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="$fwd" url="{node9}" tilt="0" id="Point01" pan="-3.76317" skinid="ht_node" title="庭院"/>
+      <hotspot description="民宿內附有一停車空間，採先到先用，不提供預定與保留服務。&#xa;&#xa;停車時請留意右側花圃以及左後方建物邊緣。&#xa;&#xa;出車時請留意左右兩側來車，請利用對街上的反光鏡檢查左側來車，並在車駛出前確定右側無來車。" target="" url="" tilt="-1.7" id="Point02" pan="-342.09" skinid="ht_info" title="停車空間"/>
+      <hotspot description="往前走約180公尺有收費停車場（中山停車場）。&#xa;&#xa;前方75公尺處路口旁有免費公有停車場（明智停車場），此路口左轉進去第一個巷口左轉也有收費停車場（城中大樓停車場）。&#xa;&#xa;&#xa;如需詳細資訊，請點擊地圖按鈕查看地圖。&#xa;" target="" url="" tilt="-1.36" id="Point03" pan="-62.85" skinid="ht_info" title="往免費、收費停車場"/>
+      <hotspot description="往前走約 3 分鐘即可抵達投幣式自助洗衣店 City Wash" target="" url="images/IMG_0682.jpg" tilt="-0.2" id="Point05" pan="-269.06" skinid="ht_image_text" title="City Wash 自助洗衣店"/>
+      <hotspot description="源自哥斯大黎加，當地的問候是「Pura Vida」，即「純粹的生命」，也是禾亮家品牌的靈感。「Pura Vida Herbs」，將對香草的熱情轉化為純粹的香草生活。" target="_blank" url="https://jpimagestudio.github.io/Pura-Vida-Herbs/" tilt="1.58" id="Point04" pan="-306.76" skinid="ht_url" title="禾亮家香草創意坊 &#xa;Pura Vida Herbs"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node9" hideabout="1">
-    <input leveltilesize="510" height="3661" width="3661" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3661" width="3661" preload="0" predecode="0"/>
-      <level height="1830" width="1830" preload="0" predecode="0"/>
-      <level height="915" width="915" preload="0" predecode="0"/>
-      <level height="457" width="457" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3661" leveltilesize="510" height="3661" levelingroll="0" overlap="1">
+      <level width="3661" predecode="0" height="3661" preload="0"/>
+      <level width="1830" predecode="0" height="1830" preload="0"/>
+      <level width="915" predecode="0" height="915" preload="0"/>
+      <level width="457" predecode="1" height="457" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="0" fovmode="2">
-      <start fov="120" tilt="0.13" pan="-107.25" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="0.13" fov="120" pan="-107.25" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node9" comment="" datetime="2025/10/15 12:06" copyright="" info="連接車道與室內空間" customnodeid="" longitude="" heading="0" title="庭院" author="James Lee" description="備有停車空間，採先到先使用方式，無保留車位服務。&#xa;民宿鐵捲門晚上八點降下，在此時間之後如需外出請留意門禁安全，開關鐵捲門請務必確定鐵捲門上升至定位並且停止捲動後再行進出。&#xa;如只有人員進出，請從側邊小鐵門進出即可。" tags="courtyard|outdoor" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point01" title="客廳" tilt="0" skinid="ht_node" description="" pan="171.114" url="{node7}" target="$fwd"/>
-      <hotspot id="Point02" title="花蓮BV民宿｜街景外觀" tilt="0" skinid="ht_node" description="" pan="1.65882" url="{node10}" target="$fwd"/>
-      <hotspot id="Point03" title="停車空間" tilt="-10.02" skinid="ht_info" description="民宿內附有一個停車位，採先到先用，不提供預訂與保留服務。&#xa;&#xa;停車時請採倒車入院並留意右側花圃以及左後方建物邊緣。&#xa;&#xa;出車時請留意左右兩側來車，請利用對街上的反光鏡檢查左側來車，並在車駛出前確定右側無來車。" pan="-93.03" url="" target=""/>
-      <hotspot id="Point04" title="鐵捲門開關" tilt="7.31" skinid="ht_info" description="夜間八點後鐵捲門會關閉，如仍需要開車進出，人員請從側邊小鐵門進入開啟鐵捲門即可。請在停妥車 / 車駛出停車位後，將鐵捲門關閉。&#xa;&#xa;開啟鐵捲門時，請務必等到鐵捲門停止後再進出，並且避免駐留在鐵捲門下方。&#xa;" pan="-311.76" url="" target=""/>
-      <hotspot id="Point05" title="" tilt="-17.46" skinid="ht_url" description="" pan="-35.88" url="" target="_blank"/>
+    <userdata datetime="2025/10/15 12:06" copyright="" comment="" info="連接車道與室內空間" longitude="" tags="courtyard|outdoor" description="備有停車空間，採先到先使用方式，無保留車位服務。&#xa;民宿鐵捲門晚上八點降下，在此時間之後如需外出請留意門禁安全，開關鐵捲門請務必確定鐵捲門上升至定位並且停止捲動後再行進出。&#xa;如只有人員進出，請從側邊小鐵門進出即可。" title="庭院" customnodeid="" latitude="" heading="0" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node9"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="$fwd" url="{node7}" tilt="0" id="Point01" pan="171.114" skinid="ht_node" title="客廳"/>
+      <hotspot description="" target="$fwd" url="{node10}" tilt="0" id="Point02" pan="1.65882" skinid="ht_node" title="花蓮BV民宿｜街景外觀"/>
+      <hotspot description="民宿內附有一個停車位，採先到先用，不提供預訂與保留服務。&#xa;&#xa;停車時請採倒車入院並留意右側花圃以及左後方建物邊緣。&#xa;&#xa;出車時請留意左右兩側來車，請利用對街上的反光鏡檢查左側來車，並在車駛出前確定右側無來車。" target="" url="" tilt="-10.02" id="Point03" pan="-93.03" skinid="ht_info" title="停車空間"/>
+      <hotspot description="夜間八點後鐵捲門會關閉，如仍需要開車進出，人員請從側邊小鐵門進入開啟鐵捲門即可。請在停妥車 / 車駛出停車位後，將鐵捲門關閉。&#xa;&#xa;開啟鐵捲門時，請務必等到鐵捲門停止後再進出，並且避免駐留在鐵捲門下方。&#xa;" target="" url="" tilt="7.31" id="Point04" pan="-311.76" skinid="ht_info" title="鐵捲門開關"/>
+      <hotspot description="" target="_blank" url="" tilt="-17.46" id="Point05" pan="-35.88" skinid="ht_url" title=""/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node7" hideabout="1">
-    <input leveltilesize="510" height="3165" width="3165" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3165" width="3165" preload="0" predecode="0"/>
-      <level height="1582" width="1582" preload="0" predecode="0"/>
-      <level height="791" width="791" preload="0" predecode="0"/>
-      <level height="395" width="395" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3165" leveltilesize="510" height="3165" levelingroll="0" overlap="1">
+      <level width="3165" predecode="0" height="3165" preload="0"/>
+      <level width="1582" predecode="0" height="1582" preload="0"/>
+      <level width="791" predecode="0" height="791" preload="0"/>
+      <level width="395" predecode="1" height="395" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="29.847" fovmode="2">
-      <start fov="120" tilt="-0.08" pan="-136.87" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="4"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="-0.08" fov="120" pan="-136.87" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="4"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node7" comment="" datetime="2025/10/24 12:28" copyright="" info="提供旅人使用的公共空間" customnodeid="" longitude="" heading="29.847" title="客廳" author="James Lee" description="客廳入口處，此為開放旅客使用的公共空間。提供熱水、茶包、小點心、急救箱、書籍、三孔轉二孔插頭連接器，請隨意取用並共同維護環境整潔。&#xa;&#xa;住客如有會客需求、享用外食等，請利用此空間。&#xa;樓梯口旁設有垃圾桶、回收桶、廚餘桶。&#xa;&#xa;有加訂早餐的住戶，早上 8:30 請在此享用。" tags="living_room" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point02" title="用餐空間" tilt="-0.02" skinid="ht_node" description="" pan="-15.9912" url="{node8}" target="$fwd"/>
-      <hotspot id="Point03" title="庭院" tilt="-1.07" skinid="ht_node" description="" pan="-285.67" url="{node9}" target="$fwd"/>
-      <hotspot id="Point01" title="這看起來很好吃！" tilt="-14.47" skinid="ht_gallery" description="meal_output" pan="-315.34" url="" target="_blank"/>
-      <hotspot id="Point04" title="景點導覽" tilt="-19.98" skinid="ht_info" description="我們製作了許多花東境內的虛擬導覽，涵括了一些知名景點與地標，讓您在吃早餐喝咖啡時搭配使用，如果您今天只是想放鬆，不用出門動動手指也可以看看你想去的景點，或許會讓您找到出門的理由。&#xa;&#xa;當然，景點導覽可以冷門但不能邪門，如果您有想要去的地方但是導覽中沒有出現，歡迎告訴我們，我們會列入拍攝計劃中，保留這個連結，也許沒多久您就會看到您建議的景點出現在虛擬導覽中～" pan="-230.35" url="" target=""/>
+    <userdata datetime="2025/10/24 12:28" copyright="" comment="" info="提供旅人使用的公共空間" longitude="" tags="living_room" description="客廳入口處，此為開放旅客使用的公共空間。提供熱水、茶包、小點心、急救箱、書籍、三孔轉二孔插頭連接器，請隨意取用並共同維護環境整潔。&#xa;&#xa;住客如有會客需求、享用外食等，請利用此空間。&#xa;樓梯口旁設有垃圾桶、回收桶、廚餘桶。&#xa;&#xa;有加訂早餐的住戶，早上 8:30 請在此享用。" title="客廳" customnodeid="" latitude="" heading="29.847" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node7"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="$fwd" url="{node8}" tilt="-0.02" id="Point02" pan="-15.9912" skinid="ht_node" title="用餐空間"/>
+      <hotspot description="" target="$fwd" url="{node9}" tilt="-1.07" id="Point03" pan="-285.67" skinid="ht_node" title="庭院"/>
+      <hotspot description="meal_output" target="_blank" url="" tilt="-14.47" id="Point01" pan="-315.34" skinid="ht_gallery" title="這看起來很好吃！"/>
+      <hotspot description="我們製作了許多花東境內的虛擬導覽，涵括了一些知名景點與地標，讓您在吃早餐喝咖啡時搭配使用，如果您今天只是想放鬆，不用出門動動手指也可以看看你想去的景點，或許會讓您找到出門的理由。&#xa;&#xa;當然，景點導覽可以冷門但不能邪門，如果您有想要去的地方但是導覽中沒有出現，歡迎告訴我們，我們會列入拍攝計劃中，保留這個連結，也許沒多久您就會看到您建議的景點出現在虛擬導覽中～" target="" url="" tilt="-19.98" id="Point04" pan="-230.35" skinid="ht_info" title="景點導覽"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node8" hideabout="1">
-    <input leveltilesize="510" height="3163" width="3163" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3163" width="3163" preload="0" predecode="0"/>
-      <level height="1581" width="1581" preload="0" predecode="0"/>
-      <level height="790" width="790" preload="0" predecode="0"/>
-      <level height="395" width="395" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3163" leveltilesize="510" height="3163" levelingroll="0" overlap="1">
+      <level width="3163" predecode="0" height="3163" preload="0"/>
+      <level width="1581" predecode="0" height="1581" preload="0"/>
+      <level width="790" predecode="0" height="790" preload="0"/>
+      <level width="395" predecode="1" height="395" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="-95.6081" fovmode="2">
-      <start fov="120" tilt="-2.6" pan="115.7" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="4"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="-2.6" fov="120" pan="115.7" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="4"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node8" comment="" datetime="2025/10/24 12:06" copyright="" info="用餐空間" customnodeid="" longitude="" heading="-95.6081" title="用餐空間" author="James Lee" description="住客可在此享用早餐（無論是否有訂購民宿早餐，都可在此享用您的餐點。" tags="living_room" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point01" title="客廳" tilt="-0.39" skinid="ht_node" description="" pan="28.919" url="{node7}" target="$fwd"/>
-      <hotspot id="Point03" title="Tea Bar 小點心" tilt="-0.24" skinid="ht_gallery_M" description="tea_output_M" pan="-232.16" url="" target="_blank"/>
-      <hotspot id="Point04" title="Tea Bar 小點心" tilt="-11.95" skinid="ht_gallery_D" description="tea_output_D" pan="-232.82" url="" target="_blank"/>
+    <userdata datetime="2025/10/24 12:06" copyright="" comment="" info="用餐空間" longitude="" tags="living_room" description="住客可在此享用早餐（無論是否有訂購民宿早餐，都可在此享用您的餐點。" title="用餐空間" customnodeid="" latitude="" heading="-95.6081" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node8"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="$fwd" url="{node7}" tilt="-0.39" id="Point01" pan="28.919" skinid="ht_node" title="客廳"/>
+      <hotspot description="tea_output_M" target="_blank" url="" tilt="-0.24" id="Point03" pan="-232.16" skinid="ht_gallery_M" title="Tea Bar 小點心"/>
+      <hotspot description="tea_output_D" target="_blank" url="" tilt="-11.95" id="Point04" pan="-232.82" skinid="ht_gallery_D" title="Tea Bar 小點心"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node1" hideabout="1">
-    <input leveltilesize="510" height="3655" width="3655" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3655" width="3655" preload="0" predecode="0"/>
-      <level height="1827" width="1827" preload="0" predecode="0"/>
-      <level height="913" width="913" preload="0" predecode="0"/>
-      <level height="456" width="456" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3655" leveltilesize="510" height="3655" levelingroll="0" overlap="1">
+      <level width="3655" predecode="0" height="3655" preload="0"/>
+      <level width="1827" predecode="0" height="1827" preload="0"/>
+      <level width="913" predecode="0" height="913" preload="0"/>
+      <level width="456" predecode="1" height="456" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="56.4523" fovmode="2">
-      <start fov="120" tilt="3.33519" pan="58.9314" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="3.33519" fov="120" pan="58.9314" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node1" comment="" datetime="2025/10/16 9:42" copyright="" info="201 Double" customnodeid="" longitude="" heading="56.4523" title="201 大陽台雙人房" author="James Lee" description="201 雙人房，房內設施提供：&#xa;一張加大雙人床、浴室、藤製吊椅&#xa;獨立空調 、小冰箱 、瓶裝水&#xa;液晶電視、MOD影音頻道&#xa;電熱壺 、小夜燈 、吹風機&#xa;掛衣架 、 循環扇&#xa;&#xa;" tags="201|room" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
+    <userdata datetime="2025/10/16 9:42" copyright="" comment="" info="201 Double" longitude="" tags="201|room" description="201 雙人房，房內設施提供：&#xa;一張加大雙人床、浴室、藤製吊椅&#xa;獨立空調 、小冰箱 、瓶裝水&#xa;液晶電視、MOD影音頻道&#xa;電熱壺 、小夜燈 、吹風機&#xa;掛衣架 、 循環扇&#xa;&#xa;" title="201 大陽台雙人房" customnodeid="" latitude="" heading="56.4523" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node1"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node3" hideabout="1">
-    <input leveltilesize="510" height="3023" width="3023" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3023" width="3023" preload="0" predecode="0"/>
-      <level height="1511" width="1511" preload="0" predecode="0"/>
-      <level height="755" width="755" preload="0" predecode="0"/>
-      <level height="377" width="377" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3023" leveltilesize="510" height="3023" levelingroll="0" overlap="1">
+      <level width="3023" predecode="0" height="3023" preload="0"/>
+      <level width="1511" predecode="0" height="1511" preload="0"/>
+      <level width="755" predecode="0" height="755" preload="0"/>
+      <level width="377" predecode="1" height="377" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="76.9147" fovmode="2">
-      <start fov="120" tilt="-0.82" pan="-37.21" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="-0.82" fov="120" pan="-37.21" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node3" comment="" datetime="2025/10/17 14:26" copyright="" info="202 Quad Room" customnodeid="" longitude="" heading="76.9147" title="202 大空間四人房" author="James Lee" description="202 四人房，房內設施提供：&#xa;兩張雙人床、浴室 （乾濕分離）&#xa;獨立空調、液晶電視、MOD影音頻道&#xa;電熱壺、小夜燈、小冰箱&#xa;掛衣架、循環扇、瓶裝水&#xa;" tags="202|room" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point01" title="202 大空間四人房 - 浴室" tilt="-0.12" skinid="ht_node" description="" pan="-79.73" url="{node2}" target=""/>
+    <userdata datetime="2025/10/17 14:26" copyright="" comment="" info="202 Quad Room" longitude="" tags="202|room" description="202 四人房，房內設施提供：&#xa;兩張雙人床、浴室 （乾濕分離）&#xa;獨立空調、液晶電視、MOD影音頻道&#xa;電熱壺、小夜燈、小冰箱&#xa;掛衣架、循環扇、瓶裝水&#xa;" title="202 大空間四人房" customnodeid="" latitude="" heading="76.9147" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node3"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="" url="{node2}" tilt="-0.12" id="Point01" pan="-79.73" skinid="ht_node" title="202 大空間四人房 - 浴室"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node2" hideabout="1">
-    <input leveltilesize="510" height="3035" width="3035" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3035" width="3035" preload="0" predecode="0"/>
-      <level height="1517" width="1517" preload="0" predecode="0"/>
-      <level height="758" width="758" preload="0" predecode="0"/>
-      <level height="379" width="379" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3035" leveltilesize="510" height="3035" levelingroll="0" overlap="1">
+      <level width="3035" predecode="0" height="3035" preload="0"/>
+      <level width="1517" predecode="0" height="1517" preload="0"/>
+      <level width="758" predecode="0" height="758" preload="0"/>
+      <level width="379" predecode="1" height="379" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="136.765" fovmode="2">
-      <start fov="120" tilt="4.2576" pan="32.5991" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="4.2576" fov="120" pan="32.5991" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node2" comment="" datetime="2025/10/18 11:55" copyright="" info="202 Quad Room" customnodeid="" longitude="" heading="136.765" title="202 大空間四人房 - 浴室" author="James Lee" description="乾濕分離浴室&#xa;提供吹風機" tags="202|bathroom" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point01" title="202 大空間四人房" tilt="0.19" skinid="ht_node" description="" pan="-192.62" url="{node3}" target=""/>
+    <userdata datetime="2025/10/18 11:55" copyright="" comment="" info="202 Quad Room" longitude="" tags="202|bathroom" description="乾濕分離浴室&#xa;提供吹風機" title="202 大空間四人房 - 浴室" customnodeid="" latitude="" heading="136.765" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node2"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="" url="{node3}" tilt="0.19" id="Point01" pan="-192.62" skinid="ht_node" title="202 大空間四人房"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node4" hideabout="1">
-    <input leveltilesize="510" height="3656" width="3656" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3656" width="3656" preload="0" predecode="0"/>
-      <level height="1828" width="1828" preload="0" predecode="0"/>
-      <level height="914" width="914" preload="0" predecode="0"/>
-      <level height="457" width="457" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3656" leveltilesize="510" height="3656" levelingroll="0" overlap="1">
+      <level width="3656" predecode="0" height="3656" preload="0"/>
+      <level width="1828" predecode="0" height="1828" preload="0"/>
+      <level width="914" predecode="0" height="914" preload="0"/>
+      <level width="457" predecode="1" height="457" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="55.5478" fovmode="2">
-      <start fov="120" tilt="0.34751" pan="35.2509" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="0.34751" fov="120" pan="35.2509" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node4" comment="" datetime="2025/10/16 9:13" copyright="" info="301 Double" customnodeid="" longitude="" heading="55.5478" title="301 大陽台雙人房" author="James Lee" description="301 雙人房，房內設施提供：&#xa;一張加大雙人床、浴室&#xa;獨立空調 、小冰箱 、瓶裝水&#xa;液晶電視、MOD影音頻道&#xa;電熱壺 、小夜燈 、吹風機&#xa;掛衣架 、 循環扇" tags="301|room" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
+    <userdata datetime="2025/10/16 9:13" copyright="" comment="" info="301 Double" longitude="" tags="301|room" description="301 雙人房，房內設施提供：&#xa;一張加大雙人床、浴室&#xa;獨立空調 、小冰箱 、瓶裝水&#xa;液晶電視、MOD影音頻道&#xa;電熱壺 、小夜燈 、吹風機&#xa;掛衣架 、 循環扇" title="301 大陽台雙人房" customnodeid="" latitude="" heading="55.5478" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node4"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node6" hideabout="1">
-    <input leveltilesize="510" height="3485" width="3485" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3485" width="3485" preload="0" predecode="0"/>
-      <level height="1742" width="1742" preload="0" predecode="0"/>
-      <level height="871" width="871" preload="0" predecode="0"/>
-      <level height="435" width="435" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3485" leveltilesize="510" height="3485" levelingroll="0" overlap="1">
+      <level width="3485" predecode="0" height="3485" preload="0"/>
+      <level width="1742" predecode="0" height="1742" preload="0"/>
+      <level width="871" predecode="0" height="871" preload="0"/>
+      <level width="435" predecode="1" height="435" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="141.795" fovmode="2">
-      <start fov="120" tilt="-0.623978" pan="-48.3927" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="-0.623978" fov="120" pan="-48.3927" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node6" comment="" datetime="2025/10/14 16:18" copyright="" info="302 Quad Room" customnodeid="" longitude="" heading="141.795" title="302 大空間四人房" author="James Lee" description="302 四人房，房內設施提供：&#xa;兩張雙人床、浴室 附浴缸（乾濕分離）&#xa;獨立空調、液晶電視、MOD影音頻道&#xa;電熱壺、小夜燈、小冰箱&#xa;掛衣架、循環扇、瓶裝水" tags="302|room" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point01" title="302 大空間四人房 - 浴室" tilt="0.36" skinid="ht_node" description="" pan="-18.46" url="{node5}" target=""/>
+    <userdata datetime="2025/10/14 16:18" copyright="" comment="" info="302 Quad Room" longitude="" tags="302|room" description="302 四人房，房內設施提供：&#xa;兩張雙人床、浴室 附浴缸（乾濕分離）&#xa;獨立空調、液晶電視、MOD影音頻道&#xa;電熱壺、小夜燈、小冰箱&#xa;掛衣架、循環扇、瓶裝水" title="302 大空間四人房" customnodeid="" latitude="" heading="141.795" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node6"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="" url="{node5}" tilt="0.36" id="Point01" pan="-18.46" skinid="ht_node" title="302 大空間四人房 - 浴室"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node5" hideabout="1">
-    <input leveltilesize="510" height="3476" width="3476" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000">
-      <level height="3476" width="3476" preload="0" predecode="0"/>
-      <level height="1738" width="1738" preload="0" predecode="0"/>
-      <level height="869" width="869" preload="0" predecode="0"/>
-      <level height="434" width="434" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3476" leveltilesize="510" height="3476" levelingroll="0" overlap="1">
+      <level width="3476" predecode="0" height="3476" preload="0"/>
+      <level width="1738" predecode="0" height="1738" preload="0"/>
+      <level width="869" predecode="0" height="869" preload="0"/>
+      <level width="434" predecode="1" height="434" preload="1"/>
       <preview color="0x808080" strip="1"/>
     </input>
     <view pannorth="103.078" fovmode="2">
-      <start fov="120" tilt="-3.40989" pan="24.974" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="1"/>
+      <start tilt="-3.40989" fov="120" pan="24.974" projection="4"/>
+      <flyin tilt="-90" fov="170" pan="0" projection="9"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="1" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node5" comment="" datetime="2025/10/14 16:54" copyright="" info="" customnodeid="" longitude="" heading="103.078" title="302 大空間四人房 - 浴室" author="James Lee" description="乾濕分離浴室提供：&#xa;浴缸&#xa;吹風機" tags="302|bathroom" latitude="" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
-      <hotspot id="Point01" title="302 大空間四人房" tilt="-1.05" skinid="ht_node" description="" pan="-224.32" url="{node6}" target=""/>
+    <userdata datetime="2025/10/14 16:54" copyright="" comment="" info="" longitude="" tags="302|bathroom" description="乾濕分離浴室提供：&#xa;浴缸&#xa;吹風機" title="302 大空間四人房 - 浴室" customnodeid="" latitude="" heading="103.078" author="James Lee" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node5"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot description="" target="" url="{node6}" tilt="-1.05" id="Point01" pan="-224.32" skinid="ht_node" title="302 大空間四人房"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node11" hideabout="1">
-    <input leveltilesize="510" height="1800" width="2400" flat="1" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000" cylinder="1">
-      <level height="1800" width="2400" preload="0" predecode="0"/>
-      <level height="900" width="1200" preload="0" predecode="0"/>
-      <level height="450" width="600" preload="0" predecode="0"/>
-      <level height="225" width="300" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" cylinder="1" width="2400" leveltilesize="510" height="1800" levelingroll="0" flat="1" overlap="1">
+      <level width="2400" predecode="0" height="1800" preload="0"/>
+      <level width="1200" predecode="0" height="900" preload="0"/>
+      <level width="600" predecode="0" height="450" preload="0"/>
+      <level width="300" predecode="1" height="225" preload="1"/>
       <preview color="0x808080"/>
     </input>
     <view pannorth="171.14" fovmode="2">
-      <start fov="500" tilt="0" pan="0"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="0"/>
+      <start tilt="0" fov="500" pan="0"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="0" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node11" comment="" datetime="2025/10/30 10:56" copyright="" info="步行約3分鐘" customnodeid="" altitude="12.79" longitude="121.60561853" heading="171.14" title="城中大樓收費停車場" author="" description="30分鐘 / 10元｜當日最高200元" tags="flat|Street" latitude="23.98516580" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
+    <userdata datetime="2025/10/30 10:56" copyright="" comment="" info="步行約3分鐘" longitude="121.60561853" tags="flat|Street" description="30分鐘 / 10元｜當日最高200元" altitude="12.79" title="城中大樓收費停車場" customnodeid="" latitude="23.98516580" heading="171.14" author="" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node11"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node12" hideabout="1">
-    <input leveltilesize="510" height="1800" width="2400" flat="1" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000" cylinder="1">
-      <level height="1800" width="2400" preload="0" predecode="0"/>
-      <level height="900" width="1200" preload="0" predecode="0"/>
-      <level height="450" width="600" preload="0" predecode="0"/>
-      <level height="225" width="300" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" cylinder="1" width="2400" leveltilesize="510" height="1800" levelingroll="0" flat="1" overlap="1">
+      <level width="2400" predecode="0" height="1800" preload="0"/>
+      <level width="1200" predecode="0" height="900" preload="0"/>
+      <level width="600" predecode="0" height="450" preload="0"/>
+      <level width="300" predecode="1" height="225" preload="1"/>
       <preview color="0x808080"/>
     </input>
     <view pannorth="-36" fovmode="2">
-      <start fov="500" tilt="0" pan="0"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="0"/>
+      <start tilt="0" fov="500" pan="0"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="0" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node12" comment="" datetime="2025/10/30 10:57" copyright="" info="步行約2分鐘" customnodeid="" altitude="15.09" longitude="121.60486953" heading="-36" title="花蓮市國安里&#xa;公共免費停車場" author="" description="免費停車場" tags="flat|Street" latitude="23.98502648" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
+    <userdata datetime="2025/10/30 10:57" copyright="" comment="" info="步行約2分鐘" longitude="121.60486953" tags="flat|Street" description="免費停車場" altitude="15.09" title="花蓮市國安里&#xa;公共免費停車場" customnodeid="" latitude="23.98502648" heading="-36" author="" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node12"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node13" hideabout="1">
-    <input leveltilesize="510" height="1800" width="2400" flat="1" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000" cylinder="1">
-      <level height="1800" width="2400" preload="0" predecode="0"/>
-      <level height="900" width="1200" preload="0" predecode="0"/>
-      <level height="450" width="600" preload="0" predecode="0"/>
-      <level height="225" width="300" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" cylinder="1" width="2400" leveltilesize="510" height="1800" levelingroll="0" flat="1" overlap="1">
+      <level width="2400" predecode="0" height="1800" preload="0"/>
+      <level width="1200" predecode="0" height="900" preload="0"/>
+      <level width="600" predecode="0" height="450" preload="0"/>
+      <level width="300" predecode="1" height="225" preload="1"/>
       <preview color="0x808080"/>
     </input>
     <view pannorth="347.66" fovmode="2">
-      <start fov="500" tilt="0" pan="0"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="0"/>
+      <start tilt="0" fov="500" pan="0"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="0" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node13" comment="" datetime="2025/10/30 10:58" copyright="" info="步行約五分鐘" customnodeid="" altitude="14.04" longitude="121.60354744" heading="347.66" title="中山明智收費停車場" author="" description="30分鐘10元 ｜當日最高120元&#xa;" tags="flat|Street" latitude="23.98469098" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
+    <userdata datetime="2025/10/30 10:58" copyright="" comment="" info="步行約五分鐘" longitude="121.60354744" tags="flat|Street" description="30分鐘10元 ｜當日最高120元&#xa;" altitude="14.04" title="中山明智收費停車場" customnodeid="" latitude="23.98469098" heading="347.66" author="" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node13"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <panorama id="node14" hideabout="1">
-    <input leveltilesize="510" height="1800" width="2400" flat="1" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" levelingpitch="0" overlap="1" levelingroll="0" levelbiashidpi="1.000" cylinder="1">
-      <level height="1800" width="2400" preload="0" predecode="0"/>
-      <level height="900" width="1200" preload="0" predecode="0"/>
-      <level height="450" width="600" preload="0" predecode="0"/>
-      <level height="225" width="300" preload="1" predecode="1"/>
+    <input levelbiashidpi="1.000" levelbias="0.400" levelingpitch="0" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" cylinder="1" width="2400" leveltilesize="510" height="1800" levelingroll="0" flat="1" overlap="1">
+      <level width="2400" predecode="0" height="1800" preload="0"/>
+      <level width="1200" predecode="0" height="900" preload="0"/>
+      <level width="600" predecode="0" height="450" preload="0"/>
+      <level width="300" predecode="1" height="225" preload="1"/>
       <preview color="0x808080"/>
     </input>
     <view pannorth="95.46" fovmode="2">
-      <start fov="500" tilt="0" pan="0"/>
-      <min fov="90" tilt="-90" pan="0"/>
-      <max fovfisheye="360" fov="130" tilt="90" pan="360" fovstereographic="330" scaletofit="0"/>
+      <start tilt="0" fov="500" pan="0"/>
+      <min tilt="-90" fov="90" pan="0"/>
+      <max tilt="90" fovstereographic="330" scaletofit="0" fov="130" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node14" comment="" datetime="" copyright="" info="步行約三分鐘" customnodeid="" altitude="10.98" longitude="121.606697" heading="95.46" title="City Wash 自助洗衣店" author="" description="24小時營業 投幣式洗衣店" tags="flat|Street" latitude="23.985989" source="Canon R6 + EF 8–15mm + Flambient"/>
-    <hotspots height="20" smoothmovement="0" width="180" wordwrap="1">
-      <label border="1" height="20" textalpha="1" width="180" backgroundcolor="0xffffff" wordwrap="1" backgroundalpha="1" enabled="1" background="1" bordercolor="0x000000" textcolor="0x000000" borderradius="1" borderalpha="1"/>
-      <polystyle mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" handcursor="1" backgroundalpha="0.25098" borderalpha="1"/>
+    <userdata datetime="" copyright="" comment="" info="步行約三分鐘" longitude="121.606697" tags="flat|Street" description="24小時營業 投幣式洗衣店" altitude="10.98" title="City Wash 自助洗衣店" customnodeid="" latitude="23.985989" heading="95.46" author="" source="Canon R6 + EF 8–15mm + Flambient" nodeid="node14"/>
+    <hotspots width="180" smoothmovement="0" height="20" wordwrap="1">
+      <label border="1" bordercolor="0x000000" backgroundcolor="0xffffff" borderalpha="1" width="180" textalpha="1" enabled="1" height="20" textcolor="0x000000" borderradius="1" wordwrap="1" backgroundalpha="1" background="1"/>
+      <polystyle bordercolor="0x0000ff" backgroundcolor="0x0000ff" mode="0" borderalpha="1" handcursor="1" backgroundalpha="0.25098"/>
     </hotspots>
     <media>
-      <sound mode="0" field="90.000" tilt="-1.000" nodechangekeep="1" startmutedmobile="0" loop="0" id="_background" level="1.000" tiltsize="10.000" ambientlevel="0.000" pan="-1.000" pansize="10.000">
-        <source mono="0" url="media/Inspiration_loop.mp3"/>
+      <sound mode="0" field="90.000" ambientlevel="0.000" loop="0" pan="-1.000" nodechangekeep="1" level="1.000" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" id="_background" pansize="10.000">
+        <source url="media/Inspiration_loop.mp3" mono="0"/>
       </sound>
     </media>
-    <transition zoomin="0" zoomafteroutfov="40" zoomout="0" blendcolor="0x000000" zoomspeed="2" enabled="1" type="crossdissolve" zoomfov="40" zoomoutpause="1" blendtime="1" delay="none" zoomafterinfov="140" softedge="0"/>
-    <animation syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0" animsequence="Animation01"/>
-    <control lockedkeyboard="0" contextprojections="0" invertwheel="0" contextvr="0" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="0" zoomcentercursor="1" rubberband="0" simulatemass="1" dblclickfullscreen="0" lockedmouse="0" hideabout="1" sensitivity="8" lockedwheel="0" speedwheel="1">
+    <transition zoomafterinfov="140" zoomafteroutfov="40" zoomfov="40" zoomout="0" zoomspeed="2" blendtime="1" zoomin="0" softedge="0" zoomoutpause="1" delay="none" enabled="1" type="crossdissolve" blendcolor="0x000000"/>
+    <animation syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01" clipsrandom="0"/>
+    <control hideabout="1" speedwheel="1" sensitivity="8" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" zoomcentercursor="1" lockedwheel="0" contextfullscreen="0" contextprojections="0" simulatemass="1" rubberband="0" invertcontrol="1" lockedmouse="0" dblclickfullscreen="0" contextvr="0">
       <menulink url="https://oring-brother.com" text="製作：爵攝數位影像"/>
     </control>
   </panorama>
   <masternode>
-    <userdata comment="業務聯繫資訊：&#xa;Web : oring-brother.com&#xa;FB : https://www.facebook.com/JP720VT/" title="花蓮BV民宿 ｜虛擬導覽" copyright="© 2025 JP爵攝數位影像工作室 (JP Image Studio). All rights reserved." author="JP爵攝數位影像工作室 | JP Image Studio" description="由 JP爵攝數位影像工作室拍攝與製作的高品質虛擬導覽，採 Flambient 技術與自然光融合，呈現空間的真實光感與色彩。" tags=""/>
+    <userdata copyright="© 2025 JP爵攝數位影像工作室 (JP Image Studio). All rights reserved." comment="業務聯繫資訊：&#xa;Web : oring-brother.com&#xa;FB : https://www.facebook.com/JP720VT/" author="JP爵攝數位影像工作室 | JP Image Studio" tags="" description="由 JP爵攝數位影像工作室拍攝與製作的高品質虛擬導覽，採 Flambient 技術與自然光融合，呈現空間的真實光感與色彩。" title="花蓮BV民宿 ｜虛擬導覽"/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>
@@ -450,5 +450,5 @@
       <projecttranslation langname="한국어" langcode="ko"/>
     </translations>
   </masternode>
-  <map mapstyle="streets" googlecustomstylecode="" type="web" mapurltemplate="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" id="Map01" title="花蓮BV民宿位置圖" index="0" mapmaxzoom="18" mapprovider="openstreetmap"/>
+  <map mapstyle="streets" index="0" mapmaxzoom="18" title="花蓮BV民宿位置圖" mapprovider="openstreetmap" mapurltemplate="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" type="web" id="Map01" googlecustomstylecode=""/>
 </tour>
