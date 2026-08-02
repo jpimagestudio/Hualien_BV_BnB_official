@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.12/21036
 // Filename: Skin_BV_bnb.ggsk
-// Generated 2026-08-02T18:30:19
+// Generated 2026-08-02T19:02:14
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_thumbnails', 2, false, { ignoreInState: 0  });
@@ -30639,7 +30639,135 @@ function pano2vrSkin(player,base) {
 		me._mq_window_.logicBlock_position();
 		me._mq_text_.logicBlock_text();
 		el = me._code_element_1;
-		 // ============ 設定區：只有這幾行需要動 ============ var SHEET_URL = "把 Google 試算表的 CSV 發布網址貼在這裡"; var HOLD_MS = 7000; // 每條字停留多久（毫秒），7000 = 7 秒 var SLIDE_MS = 350; // 上下滑動的時間（毫秒） var GAP_MS = 100; // 滑出到滑入之間的空檔（毫秒） var RELOAD_MIN = 30; // 每幾分鐘重抓一次試算表；填 0 = 只在開啟時抓一次 var FALLBACK = [ // 抓不到試算表時（斷網、網址填錯）顯示這些 "歡迎入住花蓮BV民宿", "Welcome to Hualien BV B&B", "祝您有個愉快的旅途", "訂房：0905058611" ]; // ================================================ var wrap = document.createElement('div'); wrap.className = 'jpmq_wrap'; var line = document.createElement('div'); line.className = 'jpmq_line'; wrap.appendChild(line); el.appendChild(wrap); var head = []; var rows = []; var list = FALLBACK.slice(); var idx = 0; function parseCSV(text) { text = text.replace(/^﻿/, '').replace(/\r\n?/g, '\n'); var out = [], row = [], f = '', q = false, i = 0, c; while (i = 0 ? loose : 0; } function buildList() { if (!rows.length) { list = FALLBACK.slice(); return; } var col = pickColumn(), out = [], i, t; for (i = 0; i = list.length) idx = 0; } function load() { if (SHEET_URL.indexOf('http') !== 0) return; var url = SHEET_URL + (SHEET_URL.indexOf('?') 0) setInterval(load, RELOAD_MIN * 60000); player.addListener('languagechanged', function () { buildList(); show(); });
+		// ============ 設定區：只有這幾行需要動 ============
+var SHEET_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6DJeTyHlx6mAtC9wX1PgCe6NyCZFT7E4cfDQ4htdgeyRKZMDZqYvnXpwOQY9c9az17hKZv0PPyA1g/pub?gid=0&single=true&output=csv";
+var HOLD_MS    = 7000;   // 每條字停留多久（毫秒），7000 = 7 秒
+var SLIDE_MS   = 350;    // 上下滑動的時間（毫秒）
+var GAP_MS     = 100;    // 滑出到滑入之間的空檔（毫秒）
+var RELOAD_MIN = 30;     // 每幾分鐘重抓一次試算表；填 0 = 只在開啟時抓一次
+var FALLBACK   = [       // 抓不到試算表時（斷網、網址填錯）顯示這些
+  "歡迎入住花蓮BV民宿",
+  "Welcome to Hualien BV B&B",
+  "祝您有個愉快的旅途",
+  "訂房：0905058611"
+];
+// ================================================
+
+// 樣式直接用 JavaScript 注入，不放在 Pano2VR 的樣式註解區塊裡。
+// 原因：Pano2VR 7.1.12 輸出時會把該註解區塊裡的 CSS 整段吃掉不輸出，
+//       造成電腦看得到、手機看不到（2026-08-02 解開 skin.js 實測確認）。
+(function () {
+  if (document.getElementById('jpmq_style')) return;
+  var st = document.createElement('style');
+  st.id = 'jpmq_style';
+  st.textContent =
+    '.jpmq_wrap{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;pointer-events:none;}' +
+    '.jpmq_line{position:absolute;left:0;top:0;width:100%;height:100%;' +
+    'display:flex;align-items:center;justify-content:flex-end;text-align:right;' +
+    'font-family:Verdana,Arial,Helvetica,sans-serif;font-size:14px;line-height:1.25;' +
+    'color:#ffffff;white-space:pre-wrap;word-break:break-word;}';
+  document.head.appendChild(st);
+})();
+
+var wrap = document.createElement('div');
+wrap.className = 'jpmq_wrap';
+var line = document.createElement('div');
+line.className = 'jpmq_line';
+wrap.appendChild(line);
+el.appendChild(wrap);
+
+var head = [];
+var rows = [];
+var list = FALLBACK.slice();
+var idx  = 0;
+
+function parseCSV(text) {
+  text = text.replace(/^﻿/, '').replace(/\r\n?/g, '\n');
+  var out = [], row = [], f = '', q = false, i = 0, c;
+  while (i < text.length) {
+    c = text.charAt(i);
+    if (q) {
+      if (c === '"') {
+        if (text.charAt(i + 1) === '"') { f += '"'; i++; } else { q = false; }
+      } else { f += c; }
+    } else {
+      if (c === '"') { q = true; }
+      else if (c === ',') { row.push(f); f = ''; }
+      else if (c === '\n') { row.push(f); out.push(row); row = []; f = ''; }
+      else if (c !== '\r') { f += c; }
+    }
+    i++;
+  }
+  row.push(f);
+  out.push(row);
+  return out.filter(function (r) { return r.join('').trim() !== ''; });
+}
+
+function pickColumn() {
+  var lang = String(player.getLanguage() || '').trim().toLowerCase();
+  var loose = -1, i, h;
+  for (i = 0; i < head.length; i++) {
+    h = String(head[i] || '').trim().toLowerCase();
+    if (!h) continue;
+    if (h === lang) return i;
+    if (loose < 0 && h.slice(0, 2) === lang.slice(0, 2)) loose = i;
+  }
+  return loose >= 0 ? loose : 0;
+}
+
+function buildList() {
+  if (!rows.length) { list = FALLBACK.slice(); return; }
+  var col = pickColumn(), out = [], i, t;
+  for (i = 0; i < rows.length; i++) {
+    t = String(rows[i][col] || '').trim();
+    if (!t) t = String(rows[i][0] || '').trim();
+    if (t) out.push(t);
+  }
+  list = out.length ? out : FALLBACK.slice();
+  if (idx >= list.length) idx = 0;
+}
+
+function load() {
+  if (SHEET_URL.indexOf('http') !== 0) return;
+  var url = SHEET_URL + (SHEET_URL.indexOf('?') < 0 ? '?' : '&') + '_=' + Date.now();
+  fetch(url)
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+    .then(function (t) {
+      var g = parseCSV(t);
+      if (g.length < 2) throw new Error('試算表沒有資料列');
+      head = g[0];
+      rows = g.slice(1);
+      buildList();
+    })
+    .catch(function (e) {
+      console.warn('[跑馬燈] 讀不到試算表，改用內建字串：' + e.message);
+    });
+}
+
+function show() { line.textContent = list[idx] || ''; }
+
+function step() {
+  line.style.transition = 'transform ' + SLIDE_MS + 'ms ease-out';
+  line.style.transform  = 'translateY(-100%)';
+  setTimeout(function () {
+    idx = (idx + 1) % list.length;
+    show();
+    line.style.transition = 'none';
+    line.style.transform  = 'translateY(100%)';
+    setTimeout(function () {
+      line.style.transition = 'transform ' + SLIDE_MS + 'ms ease-out';
+      line.style.transform  = 'translateY(0)';
+      setTimeout(step, HOLD_MS + SLIDE_MS);
+    }, GAP_MS);
+  }, SLIDE_MS);
+}
+
+line.style.transform = 'translateY(0)';
+show();
+load();
+setTimeout(step, HOLD_MS + 1000);
+if (RELOAD_MIN > 0) setInterval(load, RELOAD_MIN * 60000);
+player.addListener('languagechanged', function () { buildList(); show(); });
 		me._code_element_1.logicBlock_position();
 		me._mq_timer_c.logicBlock_visible();
 		me._mq_timer_a.logicBlock_visible();
