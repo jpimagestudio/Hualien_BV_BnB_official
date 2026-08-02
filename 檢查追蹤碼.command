@@ -25,7 +25,6 @@ if grep -q "$ID" "$F"; then
 fi
 
 echo "🔴 追蹤碼不見了（重新輸出時被覆蓋）。正在補回去..."
-cp "$F" "$F.bak-$(date +%Y%m%d-%H%M%S)"
 
 python3 - "$F" "$ID" <<'PY'
 import sys
@@ -49,8 +48,9 @@ open(p, 'w', encoding='utf-8').write('\n'.join(cur[:i+1] + ga4 + cur[i+1:]))
 PY
 
 if grep -q "$ID" "$F"; then
-  echo "✅ 已補回追蹤碼。原檔備份在同資料夾（檔名結尾 .bak-日期時間）。"
+  echo "✅ 已補回追蹤碼。"
   echo "   現在可以去 GitHub Desktop 提交、推送。"
+  echo "   （不再產生 .bak 備份檔；要回舊版請用 GitHub Desktop 的歷史紀錄）"
 else
   echo "❌ 補不回去，請找 Claude 處理，先不要推送。"
 fi
