@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.12/21036
 // Filename: Skin_BV_bnb.ggsk
-// Generated 2026-08-02T16:01:48
+// Generated 2026-08-02T18:30:19
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_thumbnails', 2, false, { ignoreInState: 0  });
@@ -28572,13 +28572,13 @@ function pano2vrSkin(player,base) {
 		hs ='';
 		hs+='height : 21px;';
 		hs+='left : 50%;';
-		hs+='margin-left : -119.5px;';
+		hs+='margin-left : -99.5px;';
 		hs+='margin-top : -10.5px;';
 		hs+='overflow-x : visible;';
 		hs+='overflow-y : visible;';
 		hs+='position : absolute;';
 		hs+='top : 50%;';
-		hs+='width : 239px;';
+		hs+='width : 199px;';
 		hs+="";
 		els.setAttribute('style',hs);
 		me._mq_window_.ggScrollByX = function(diffX) {
@@ -28730,7 +28730,7 @@ function pano2vrSkin(player,base) {
 		hs+='right : 15px;';
 		hs+='top : calc(50% - ((22px + 0px) / 2) + 0px);';
 		hs+='visibility : hidden;';
-		hs+='width : 240px;';
+		hs+='width : 200px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
@@ -29035,12 +29035,12 @@ function pano2vrSkin(player,base) {
 		el.className="ggskin ggskin_code ";
 		el.ggType='code';
 		hs ='';
-		hs+='height : 46px;';
+		hs+='height : 40px;';
 		hs+='position : absolute;';
 		hs+='right : 10px;';
-		hs+='top : calc(50% - ((46px + 0px) / 2) + 0px);';
+		hs+='top : calc(50% - ((40px + 0px) / 2) + 0px);';
 		hs+='visibility : inherit;';
-		hs+='width : 400px;';
+		hs+='width : 240px;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
@@ -29069,47 +29069,18 @@ function pano2vrSkin(player,base) {
 			}
 			if (me._code_element_1.ggCurrentLogicStatePosition != newLogicStatePosition) {
 				me._code_element_1.ggCurrentLogicStatePosition = newLogicStatePosition;
-				me._code_element_1.style.transition='right 0s, top 0s, width 0s, height 0s';
+				me._code_element_1.style.transition='right 0s, top 0s';
 				if (me._code_element_1.ggCurrentLogicStatePosition == 0) {
 					me._code_element_1.style.right='40px';
-					me._code_element_1.style.top = 'calc(50% - (46px / 2))';
+					me._code_element_1.style.top = 'calc(50% - (40px / 2))';
 				}
 				else {
 					me._code_element_1.style.right='10px';
-					me._code_element_1.style.top='calc(50% - ((46px + 0px) / 2) + 0px)';
+					me._code_element_1.style.top='calc(50% - ((40px + 0px) / 2) + 0px)';
 				}
 			}
 		}
 		me._code_element_1.logicBlock_position();
-		me._code_element_1.logicBlock_size = function() {
-			var newLogicStateSize;
-			if (
-				((player.getViewerSize(true).width < 640))
-			)
-			{
-				newLogicStateSize = 0;
-			}
-			else {
-				newLogicStateSize = -1;
-			}
-			if (me._code_element_1.ggCurrentLogicStateSize != newLogicStateSize) {
-				me._code_element_1.ggCurrentLogicStateSize = newLogicStateSize;
-				me._code_element_1.style.transition='right 0s, top 0s, width 0s, height 0s';
-				if (me._code_element_1.ggCurrentLogicStateSize == 0) {
-					me._code_element_1.style.width='240px';
-					me._code_element_1.style.height='22px';
-					me._code_element_1.style.top = 'calc(50% - (22px / 2))';
-					skin.updateSize(me._code_element_1);
-				}
-				else {
-					me._code_element_1.style.width='400px';
-					me._code_element_1.style.height='46px';
-					me._code_element_1.style.top = 'calc(50% - (46px / 2))';
-					skin.updateSize(me._code_element_1);
-				}
-			}
-		}
-		me._code_element_1.logicBlock_size();
 		me._code_element_1.ggUpdatePosition=function (useTransition) {
 		}
 		me._brandbar.appendChild(me._code_element_1);
@@ -30668,124 +30639,8 @@ function pano2vrSkin(player,base) {
 		me._mq_window_.logicBlock_position();
 		me._mq_text_.logicBlock_text();
 		el = me._code_element_1;
-		
-
-// ============ 設定區：只有這幾行需要動 ============
-var SHEET_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6DJeTyHlx6mAtC9wX1PgCe6NyCZFT7E4cfDQ4htdgeyRKZMDZqYvnXpwOQY9c9az17hKZv0PPyA1g/pub?gid=0&single=true&output=csv";
-var HOLD_MS    = 7000;   // 每條字停留多久（毫秒），7000 = 7 秒
-var SLIDE_MS   = 350;    // 上下滑動的時間（毫秒）
-var GAP_MS     = 100;    // 滑出到滑入之間的空檔（毫秒）
-var SHIFT_PX   = 22;     // 滑動距離（像素），跟原本一樣
-var RELOAD_MIN = 30;     // 每幾分鐘重抓一次試算表；填 0 = 只在開啟時抓一次
-var FALLBACK   = [       // 抓不到試算表時（斷網、網址填錯）顯示這些
-  "八月部落豐年祭開跑！",
-  "市區最大規模豐年祭",
-  "娜荳蘭部落豐年祭",
-  "訂房：0905058611"
-];
-// ================================================
-
-var wrap = document.createElement('div');
-wrap.className = 'jpmq_wrap';
-var line = document.createElement('div');
-line.className = 'jpmq_line';
-wrap.appendChild(line);
-el.appendChild(wrap);
-
-var head = [];
-var rows = [];
-var list = FALLBACK.slice();
-var idx  = 0;
-
-function parseCSV(text) {
-  text = text.replace(/^﻿/, '');
-  var out = [], row = [], f = '', q = false, i = 0, c;
-  while (i < text.length) {
-    c = text.charAt(i);
-    if (q) {
-      if (c === '"') {
-        if (text.charAt(i + 1) === '"') { f += '"'; i++; } else { q = false; }
-      } else { f += c; }
-    } else {
-      if (c === '"') { q = true; }
-      else if (c === ',') { row.push(f); f = ''; }
-      else if (c === '\n') { row.push(f); out.push(row); row = []; f = ''; }
-      else if (c !== '\r') { f += c; }
-    }
-    i++;
-  }
-  row.push(f);
-  out.push(row);
-  return out.filter(function (r) { return r.join('').trim() !== ''; });
-}
-
-function pickColumn() {
-  var lang = String(player.getLanguage() || '').trim().toLowerCase();
-  var loose = -1, i, h;
-  for (i = 0; i < head.length; i++) {
-    h = String(head[i] || '').trim().toLowerCase();
-    if (!h) continue;
-    if (h === lang) return i;
-    if (loose < 0 && h.slice(0, 2) === lang.slice(0, 2)) loose = i;
-  }
-  return loose >= 0 ? loose : 0;
-}
-
-function buildList() {
-  if (!rows.length) { list = FALLBACK.slice(); return; }
-  var col = pickColumn(), out = [], i, t;
-  for (i = 0; i < rows.length; i++) {
-    t = String(rows[i][col] || '').trim();
-    if (!t) t = String(rows[i][0] || '').trim();
-    if (t) out.push(t);
-  }
-  list = out.length ? out : FALLBACK.slice();
-  if (idx >= list.length) idx = 0;
-}
-
-function load() {
-  if (SHEET_URL.indexOf('http') !== 0) return;
-  var url = SHEET_URL + (SHEET_URL.indexOf('?') < 0 ? '?' : '&') + '_=' + Date.now();
-  fetch(url)
-    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
-    .then(function (t) {
-      var g = parseCSV(t);
-      if (g.length < 2) throw new Error('試算表沒有資料列');
-      head = g[0];
-      rows = g.slice(1);
-      buildList();
-    })
-    .catch(function (e) {
-      console.warn('[跑馬燈] 讀不到試算表，改用內建字串：' + e.message);
-    });
-}
-
-function show() { line.textContent = list[idx] || ''; }
-
-function step() {
-  line.style.transition = 'transform ' + SLIDE_MS + 'ms ease-out';
-  line.style.transform  = 'translateY(calc(-50% - ' + SHIFT_PX + 'px))';
-  setTimeout(function () {
-    idx = (idx + 1) % list.length;
-    show();
-    line.style.transition = 'none';
-    line.style.transform  = 'translateY(calc(-50% + ' + SHIFT_PX + 'px))';
-    setTimeout(function () {
-      line.style.transition = 'transform ' + SLIDE_MS + 'ms ease-out';
-      line.style.transform  = 'translateY(-50%)';
-      setTimeout(step, HOLD_MS + SLIDE_MS);
-    }, GAP_MS);
-  }, SLIDE_MS);
-}
-
-line.style.transform = 'translateY(-50%)';
-show();
-load();
-setTimeout(step, HOLD_MS + 1000);
-if (RELOAD_MIN > 0) setInterval(load, RELOAD_MIN * 60000);
-player.addListener('languagechanged', function () { buildList(); show(); });
+		 // ============ 設定區：只有這幾行需要動 ============ var SHEET_URL = "把 Google 試算表的 CSV 發布網址貼在這裡"; var HOLD_MS = 7000; // 每條字停留多久（毫秒），7000 = 7 秒 var SLIDE_MS = 350; // 上下滑動的時間（毫秒） var GAP_MS = 100; // 滑出到滑入之間的空檔（毫秒） var RELOAD_MIN = 30; // 每幾分鐘重抓一次試算表；填 0 = 只在開啟時抓一次 var FALLBACK = [ // 抓不到試算表時（斷網、網址填錯）顯示這些 "歡迎入住花蓮BV民宿", "Welcome to Hualien BV B&B", "祝您有個愉快的旅途", "訂房：0905058611" ]; // ================================================ var wrap = document.createElement('div'); wrap.className = 'jpmq_wrap'; var line = document.createElement('div'); line.className = 'jpmq_line'; wrap.appendChild(line); el.appendChild(wrap); var head = []; var rows = []; var list = FALLBACK.slice(); var idx = 0; function parseCSV(text) { text = text.replace(/^﻿/, '').replace(/\r\n?/g, '\n'); var out = [], row = [], f = '', q = false, i = 0, c; while (i = 0 ? loose : 0; } function buildList() { if (!rows.length) { list = FALLBACK.slice(); return; } var col = pickColumn(), out = [], i, t; for (i = 0; i = list.length) idx = 0; } function load() { if (SHEET_URL.indexOf('http') !== 0) return; var url = SHEET_URL + (SHEET_URL.indexOf('?') 0) setInterval(load, RELOAD_MIN * 60000); player.addListener('languagechanged', function () { buildList(); show(); });
 		me._code_element_1.logicBlock_position();
-		me._code_element_1.logicBlock_size();
 		me._mq_timer_c.logicBlock_visible();
 		me._mq_timer_a.logicBlock_visible();
 		me._mq_timer_b.logicBlock_visible();
@@ -31523,7 +31378,6 @@ player.addListener('languagechanged', function () { buildList(); show(); });
 			me._image_1.logicBlock_size();
 			me._mq_window_.logicBlock_position();
 			me._code_element_1.logicBlock_position();
-			me._code_element_1.logicBlock_size();
 		});
 		player.addListener('soundspermittedchanged', function(event) {
 			me._variable_vis_sounds_splashscreen.logicBlock();
@@ -41846,7 +41700,7 @@ this.__div.style.top = vs.height / 2 + "px";
 	me.addSkin();
 	var style = document.createElement('style');
 	style.type = 'text/css';
-	hs='.ggskin { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: normal; } .ggmarkdown p,.ggmarkdown h1,.ggmarkdown h2,.ggmarkdown h3,.ggmarkdown h4 { margin-top: 0px } .ggmarkdown { white-space:normal }.jpmq_wrap{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;pointer-events:none;} .jpmq_line{position:absolute;left:0;top:50%;width:100%;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:14px;color:#ffffff;text-align:right;white-space:pre;} @font-face { font-family: "Montserrat"; font-style: normal; font-weight: 400; src: local(""), url("$(skinbase)fonts/montserrat-latin-regular.woff2") format("woff2"); } .montserrat_regular { font-family: "Montserrat", sans-serif; font-weight: 400; }';
+	hs='.ggskin { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; line-height: normal; } .ggmarkdown p,.ggmarkdown h1,.ggmarkdown h2,.ggmarkdown h3,.ggmarkdown h4 { margin-top: 0px } .ggmarkdown { white-space:normal }@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 400; src: local(""), url("$(skinbase)fonts/montserrat-latin-regular.woff2") format("woff2"); } .montserrat_regular { font-family: "Montserrat", sans-serif; font-weight: 400; }';
 	hs = hs.replace(/\$\(skinbase\)/g,basePath);
 	style.appendChild(document.createTextNode(hs));
 	document.head.appendChild(style);
