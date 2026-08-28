@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.12/21036
 // Filename: Skin_BV_bnb.ggsk
-// Generated 2026-08-28T17:45:42
+// Generated 2026-08-28T17:58:51
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_thumbnails', 2, false, { ignoreInState: 0  });
@@ -30607,7 +30607,7 @@ function pano2vrSkin(player,base) {
 		el = me._code_element_1;
 		// ============ 設定區：只有這幾行需要動 ============
 var SHEET_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6DJeTyHlx6mAtC9wX1PgCe6NyCZFT7E4cfDQ4htdgeyRKZMDZqYvnXpwOQY9c9az17hKZv0PPyA1g/pub?gid=0&single=true&output=csv";
-var HOLD_MS    = 5000;   // 每條字停留多久（毫秒），7000 = 7 秒
+var HOLD_MS    = 4000;   // 每條字停留多久（毫秒），4000 = 4 秒
 var SLIDE_MS   = 350;    // 上下滑動的時間（毫秒）
 var GAP_MS     = 100;    // 滑出到滑入之間的空檔（毫秒）
 var RELOAD_MIN = 30;     // 每幾分鐘重抓一次試算表；填 0 = 只在開啟時抓一次
